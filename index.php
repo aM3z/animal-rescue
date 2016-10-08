@@ -1,4 +1,9 @@
-<?php require('./templates/header.php'); ?>
+<?php 
+
+	require('./config.php'); 
+	require('./templates/header.php'); 
+
+?>
 
 			<main role="main" class="clear main-wrapper">
 				
@@ -9,7 +14,7 @@
 			
 				<article> 
 					<header>
-						<h1>Come Catch the Big One!</h1>
+						<h1>Adopt a Dog!</h1>
 						<p>Published: <time pubdate="pubdate">2016-10-07</time> </p>
 						<hr>
 					</header>

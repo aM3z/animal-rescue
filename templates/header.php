@@ -1,3 +1,5 @@
+<?php require('./config.php'); ?>
+
 <!DOCTYPE html>
 
 <!--
@@ -29,8 +31,8 @@ DATE: 		2016-10-18
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- styling -->
-		<link rel="stylesheet" href="" />
-		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/style.css">
 
 	</head>
 	<body> 
