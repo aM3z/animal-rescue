@@ -26,6 +26,7 @@ DATE: 		2016-10-18
 		<meta name="description" content="This is a multi-page website for rescuing two types of pets or animals.">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Micaela Pierce, Miguel Amezola">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- styling -->
 		<link rel="stylesheet" href="" />
