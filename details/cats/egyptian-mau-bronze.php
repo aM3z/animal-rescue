@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/cats/Egyptian_Mau_Bronze.jpg" alt="Egyptian Mau Bronze">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/cats/Egyptian_Mau_Bronze.jpg" alt="Egyptian Mau Bronze">
 
 				</article>
 

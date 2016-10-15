@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/cats/korat.jpg" alt="Korat">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/cats/korat.jpg" alt="Korat">
 
 				</article>
 

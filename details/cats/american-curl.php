@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/cats/american-curl.jpg" alt="American Curl">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/cats/american-curl.jpg" alt="American Curl">
 
 				</article>
 

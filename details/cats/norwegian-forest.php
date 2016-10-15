@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/cats/Noorse-boskat.jpg" alt="Norwegian Forest Cat">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/cats/Noorse-boskat.jpg" alt="Norwegian Forest Cat">
 
 				</article>
 

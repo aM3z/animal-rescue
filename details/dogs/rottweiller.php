@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/dogs/Rottweiler_standing_facing_left.jpg" alt="Rottweiller">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/dogs/Rottweiler_standing_facing_left.jpg" alt="Rottweiller">
 
 				</article>
 

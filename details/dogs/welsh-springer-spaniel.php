@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/dogs/Welsh_Springer_Spaniel.jpg" alt="Welsh Springer Spaniel">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/dogs/Welsh_Springer_Spaniel.jpg" alt="Welsh Springer Spaniel">
 
 				</article>
 

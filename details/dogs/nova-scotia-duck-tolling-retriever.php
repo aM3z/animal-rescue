@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/dogs/Nova_Scotia_duck_tolling_retriever.jpg" alt="Nova Scotia Duck Tolling Retriever">
+                    <img class="pet-pix" src="<?php print IMAGES; ?>/dogs/Nova_Scotia_duck_tolling_retriever.jpg" alt="Nova Scotia Duck Tolling Retriever">
 
 				</article>
 

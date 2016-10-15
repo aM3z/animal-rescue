@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/dogs/Little_tootie.jpg" alt="Yorkshire Terrier">
+                    <img  class="pet-pix" src="<?php print IMAGES; ?>/dogs/Little_tootie.jpg" alt="Yorkshire Terrier">
 
 				</article>
 
