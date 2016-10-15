@@ -1,5 +1,3 @@
-<?php require('./config.php'); ?>
-
 <!DOCTYPE html>
 
 <!--
@@ -32,7 +30,7 @@ DATE: 		2016-10-18
 
 		<!-- styling -->
 		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/style.css">
 
 		<!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -42,7 +40,7 @@ DATE: 		2016-10-18
 		<div class="container">
 			<header>
 				<div class="main-wrapper">	
-					<h1><img src="http://placehold.it/60x60"><a id="homepage-link" href="">Rescue Dogs and Cats</a></h1>
+				<h1><img src="http://placehold.it/60x60"><a id="homepage-link" href="<?php print BASE_PATH; ?>">Rescue Dogs and Cats</a></h1>
 				</div>	
 				<nav>
 					<div class="nav-wrapper">

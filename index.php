@@ -1,5 +1,7 @@
 <?php 
 
+
+	require('./config.php');
 	require('./templates/header.php'); 
 
 ?>
