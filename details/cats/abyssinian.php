@@ -14,7 +14,7 @@
 						<hr>
 					</header>
 
-                    <img src="<?php print IMAGES; ?>/dogs/Gustav_chocolate.jpg" alt="Abyssinian Cat Named Gustav">
+                    <img src="<?php print IMAGES; ?>/cats/Gustav_chocolate.jpg" alt="Abyssinian Cat Named Gustav">
 
 				</article>
 

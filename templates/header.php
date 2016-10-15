@@ -48,18 +48,21 @@ DATE: 		2016-10-18
 					<div class="dropdown">
 						<a href="" class="menubtn">Dogs</a>
 						<div class="dropdown-content">
-							<div class="dd-link-wrapper"><a href="">One</a></div>
-							<div class="dd-link-wrapper"><a href="">Two</a></div>
-							<div class="dd-link-wrapper"><a href="">Three</a></div>
+						<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/nova-scotia-duck-tolling-retriever.php">Nova Scotia Duck Tolling Retriever</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/rottweiller.php">Rottweiller</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/welsh-springer-spaniel.php">Welsh Springer Spaniel</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/yorkshire-terrier.php">Yorkshire Terrier</a></div>
 						</div>
 					</div>
 					<!-- second dropdown -->
 					<div class="dropdown">
 						<a href="" class="menubtn">Cats</a>
 						<div class="dropdown-content">
-							<div class="dd-link-wrapper"><a href="">One</a></div>
-							<div class="dd-link-wrapper"><a href="">Two</a></div>
-							<div class="dd-link-wrapper"><a href="">Three</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/abyssinian.php">Abyssinian</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/american-curl.php">American Curl</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/egyptian-mau-bronze.php">Egyptian Mau Bronze</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/korat.php">Korat</a></div>
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/norwegian-forest.php">Norwegian Forest</a></div>
 						</div>
 					</div>
 					<!-- third dropdown -->
