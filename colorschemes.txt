@@ -1,0 +1,8 @@
+This site can generate some nice color schemes we can use, I found a couple I liked but most of what it generates should be good for the project so if you find/generate one you like we could easily go with that.
+
+Possible color schemes (choose one):
+https://coolors.co/d3c1c3-e2d0be-eee5bf-e8f8c1-d1ffc6
+https://coolors.co/d1ccdc-424c55-f5edf0-886f68-3d2c2e
+https://coolors.co/272838-f3de8a-eb9486-7e7f9a-f9f8f8
+https://coolors.co/52d1dc-475b5a-8d8e8e-a3a9aa-bbbbbf
+https://coolors.co/d1faff-9bd1e5-6a8eae-57a773-157145
