@@ -6,6 +6,14 @@
 body {
 	font:10pt verdana;
 	margin:0px;
+	background-image:url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/fabric_of_squares_gray.png');
+	margin-top:-20px;
+}
+main {
+	position:relative;
+	width:80%;
+	background-color:#fefefe;
+	margin:30px auto;
 }
 
 /**********************************
@@ -16,9 +24,11 @@ body {
 header {
 	-webkit-margin-before: 0 em;
     -webkit-margin-after: 0 em;
-	margin-top:0px;
+	top:0px;
 	display:block;
 	border-bottom:4px solid #333;
+	background-color:#fefefe;
+	padding-top:20px;
 }
 header img {
 	float:left;
@@ -78,3 +88,9 @@ div.dd-link-wrapper:hover {
 	background-color:#eaeaea;
 	transition:.5s;
 }
+
+/**********************************
+----------------------------------
+	HOME
+----------------------------------
+**********************************/
