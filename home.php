@@ -6,10 +6,6 @@
 
 			<main role="main" class="clear main-wrapper">
 				
-				<?php require('./templates/sidebar1.php'); ?>			
-				<div class="sidebar1">
-				</div>
-
 				<section class="home">
 					<article> 
 						<header>
