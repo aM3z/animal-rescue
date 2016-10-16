@@ -6,7 +6,8 @@ if($_SERVER['SERVER_NAME'] == 'www.cs.plu.edu') {
 	// remove "public_html/" from path
 	$path_here = str_replace("public_html/", "", $path_here); 
 } else {
-	$path_here = __DIR__;
+	//$path_here = __DIR__;
+	$path_here = "http://localhost/animal-rescue/";
 }
 
 define("BASE_PATH", $path_here);
