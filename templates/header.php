@@ -29,8 +29,8 @@ DATE: 		2016-10-18
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- styling -->
-		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
 
 		<!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
