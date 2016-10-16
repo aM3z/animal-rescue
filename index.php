@@ -10,9 +10,7 @@
 				
 				<article> 
 					<header>
-						<h1>Adopt a Dog!</h1>
-						<p>Published: <time pubdate="pubdate">2016-10-07</time> </p>
-						<hr>
+						<h1>Welcome!</h1>
 					</header>
 				</article>
 

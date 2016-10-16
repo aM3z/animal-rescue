@@ -41,7 +41,7 @@ DATE: 		2016-10-18
 		<div class="container">
 			<header class="page">
 				<div class="main-wrapper">	
-					<h1><img src="http://placehold.it/60x60"><a id="homepage-link" href="<?php print BASE_PATH; ?>">Rescue Dogs and Cats</a></h1>
+					<h1><!--<img src="http://placehold.it/60x60">--><a id="homepage-link" href="<?php print BASE_PATH; ?>">Pet Rescue</a></h1>
 				</div>
 				<nav>
 					<div class="nav-wrapper main-wrapper">
@@ -86,8 +86,7 @@ DATE: 		2016-10-18
 					</div>
 				</div>
 				</nav>
-			</header> 
-
+			</header>
 			
 			<!--	
 			<div class="main-wrapper" id="social-media-buttons">

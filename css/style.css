@@ -23,6 +23,10 @@ article {
 	overflow: auto;
 }
 
+footer {
+	padding-top: 60px;
+}
+
 
 /**********************************
 ----------------------------------
@@ -37,6 +41,7 @@ header.page {
 	border-bottom:4px solid #333;
 	background-color: #272838;
 	padding-top:20px;
+	margin-bottom: 10px;
 }
 header.page img {
 	float:left;
@@ -74,6 +79,7 @@ div.dropdown-content {
 	display:none;
 	position:absolute;
 	z-index:100;
+	top: 38px;
 	left:0px;
 	transition:.5s;
 }
