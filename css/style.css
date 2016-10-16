@@ -11,7 +11,7 @@ body {
 }
 main {
 	position:relative;
-	width:80%;
+	width:100%;
 	background-color:#fefefe;
 	margin:30px auto;
 	padding:15px;
@@ -22,6 +22,7 @@ main {
 article {
 	overflow: auto;
 }
+
 
 /**********************************
 ----------------------------------
@@ -135,8 +136,12 @@ img.pet-pix {
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	main > article {
 		float: left;
-		width: 700px;
+		width: 650px;
 		padding: 10px;
+	}
+	.main-wrapper {
+		max-width: 961px;
+		margin: 0 auto;
 	}
 
 	.sidebar1 {
@@ -150,6 +155,7 @@ img.pet-pix {
 		float: left;
 		padding-right: 10px;
 	}
+	
 
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
