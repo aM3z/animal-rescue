@@ -43,6 +43,27 @@ button.default {
 	box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.75);
 }
 
+button.adopt {
+	margin:0 auto;
+	background-color:#7E7F9A;
+	padding:10px;
+	border:0px;
+	box-shadow:0px 0px 10px #CCCBCB;
+	-webkit-box-shadow:0px 0px 10px #CCCBCB;
+	-moz-box-shadow:0px 0px 10px #CCCBCB;
+	font:30px 'Montserrat', sans-serif;
+	font-weight:900;
+	color:#F9F8F8;
+	border-radius:5px;
+	text-shadow:1px 1px #272838, 1px -1px #272838, -1px -1px #272838, -1px 1px #272838;
+}
+button.adopt:hover {
+	text-decoration:underline;
+}
+button.adopt:active {
+	background-color:#68687F;
+	border:none;
+}
 /**********************************
 ----------------------------------
 	HEADER
@@ -117,29 +138,6 @@ div.dropdown:hover .dropdown-content {
 div.dd-link-wrapper:hover {
 	background-color:#eaeaea;
 	transition:.5s;
-}
-
-/**********************************
-----------------------------------
-	HOME (details)
-----------------------------------
-**********************************/
-section.home, section.details {
-	display:inline-block;
-	width:75%;
-	vertical-align:top;
-	border:1px solid;
-	padding:10px;
-	box-sizing:border-box;
-}
-aside.home, aside.details {
-	display:inline-block;
-	box-sizing:border-box;
-	padding:10px;
-	width:24.34%;
-	vertical-align:top;
-	border:1px solid;
-	border:1px solid;
 }
 
 /**********************************
@@ -255,8 +253,21 @@ section.index:hover article p{
 	DETAILS
 ----------------------------------
 **********************************/
+section.details {
+	display:inline-block;
+	width:75%;
+	vertical-align:top;
+	border:1px solid;
+	padding:10px;
+	box-sizing:border-box;
+}
+aside.details {
+	display:inline-block;
+	box-sizing:border-box;
+	width:24.34%;
+	vertical-align:top;
+}
 section.details article header {
-	background-image:url('./../images/dogs/yorkie.jpg');
 	background-size:cover;
 	border:4px double #272838;
 	padding-left:20px;
@@ -270,6 +281,52 @@ section.details article header h1 {
 	padding:0px 20px 0px 5px;
 	text-transform:uppercase;
 }
+section.details ul {
+	float:left;
+	margin:10px;
+	margin-right:20px;
+}
+section.details li {
+	width:100px;
+	height:100px;
+	text-align:center;
+	padding:5px;
+	border:2px solid #F3DE8A;
+	outline:8px solid #7E7F9A;
+	overflow:hidden;
+	margin:25px 5px;
+}
+section.details li div.imghold {
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+}
+section.details li img {
+	min-height:100px;
+	max-height:100px;
+	position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+section.details p {
+	text-align:justify;
+	font-size:14px;
+	padding:15px;
+}
+section.details p::first-line {
+	font-weight:bold;
+}
+
+aside.details article {
+	border:1px solid #272838;
+	padding:10px;
+	margin:0px 0px 15px 0px;
+}
 aside.details h2 {
 	font-size:13px;
 	background-color:#EB9486;
@@ -278,7 +335,7 @@ aside.details h2 {
 	padding:10px;
 	color:#F9F8F8;
 	text-transform:lowercase;
-	line-height:14px;
+	line-height:16px;
 	font-weight:200;
 }
 aside.details h2 b {
@@ -289,7 +346,7 @@ aside.details h2 b {
 	border-bottom:1px solid;
 	text-transform:uppercase;
 }
-aside.details ul {
+aside.details ul, section.details ul {
 	list-style:none;
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
@@ -310,12 +367,25 @@ aside.details ul li b {
 	width:50px;
 	display:inline-block;
 	text-align:center;
+	transition:.5s ease-in-out;
 }
 aside.details ul li:hover {
 	font-weight:bold;
 	transition:.5s ease-in-out;
 	background-color:#F9F8F8;
 }
+aside.details ul li:hover b {
+	color:#F3DE8A;
+	transition:.5s ease-in-out;
+}
+
+
+/**********************************
+----------------------------------
+	COMPATABILITY
+----------------------------------
+**********************************/
+
 
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
