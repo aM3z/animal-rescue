@@ -23,7 +23,7 @@ DATE: 		2016-10-18
 		<!-- meta tags -->
 		<meta charset="utf-8">
 		<title>Rescue Dogs and Cats</title>
-		<base href="http://localhost/animal-rescue/" />
+		
 		<meta name="description" content="This is a multi-page website for rescuing two types of pets or animals.">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Micaela Pierce, Miguel Amezola">
