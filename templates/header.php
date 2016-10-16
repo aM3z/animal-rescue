@@ -30,11 +30,11 @@ DATE: 		2016-10-18
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- styling -->
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/style.css">
 
 		<!-- google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
 	</head>
 	<body> 
@@ -47,7 +47,7 @@ DATE: 		2016-10-18
 					<div class="nav-wrapper main-wrapper">
 					<!-- first dropdown -->
 					<div class="dropdown">
-						<a href="" class="menubtn">Dogs</a>
+					<a href="<?php print BASE_PATH; ?>/dog-index.php" class="menubtn">Dogs</a>
 						<div class="dropdown-content">
 						<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/nova-scotia-duck-tolling-retriever.php">Nova Scotia Duck Tolling Retriever</a></div>
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/rottweiller.php">Rottweiller</a></div>
@@ -57,7 +57,7 @@ DATE: 		2016-10-18
 					</div>
 					<!-- second dropdown -->
 					<div class="dropdown">
-						<a href="" class="menubtn">Cats</a>
+						<a href="<?php print BASE_PATH; ?>/cat-index.php" class="menubtn">Cats</a>
 						<div class="dropdown-content">
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/abyssinian.php">Abyssinian</a></div>
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/american-curl.php">American Curl</a></div>
@@ -68,7 +68,7 @@ DATE: 		2016-10-18
 					</div>
 					<!-- third dropdown -->
 					<div class="dropdown">
-						<a href="" class="menubtn">About Us</a>
+						<a href="<?php print BASE_PATH; ?>/about.php" class="menubtn">About Us</a>
 						<!--
 						<div class="dropdown-content">
 							<a href=""></a>
@@ -77,7 +77,7 @@ DATE: 		2016-10-18
 					</div>
 					<!-- fourth dropdown -->
 					<div class="dropdown">
-						<a href="" class="menubtn">Credits</a>
+					<a href="<?php print BASE_PATH; ?>/credits.php" class="menubtn">Credits</a>
 						<!--
 						<div class="dropdown-content">
 							<a href=""></a>
@@ -89,8 +89,9 @@ DATE: 		2016-10-18
 			</header> 
 
 			
-			
+			<!--	
 			<div class="main-wrapper" id="social-media-buttons">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-text="This website is a homework project for CSCI387 course @PLUNEWS and is not a real travel site." data-url="https://www.cs.plu.edu/~amezolma/homework/hw3" data-via="aM3zola" data-show-count="false">Tweet</a>
+				<a href="https://twitter.com/intent/tweet?button_hashtag=Lutes" class="twitter-hashtag-button" data-size="large" data-text="Hi! Thank you for sharing our project!" data-show-count="false">Tweet #Lutes</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
+			-->
 
