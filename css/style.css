@@ -29,29 +29,30 @@ article {
 	HEADER
 ----------------------------------
 **********************************/
-header {
+header.page {
 	-webkit-margin-before: 0 em;
     -webkit-margin-after: 0 em;
 	top:0px;
 	display:block;
 	border-bottom:4px solid #333;
-	background-color:#fefefe;
+	background-color: #272838;
 	padding-top:20px;
 }
-header img {
+header.page img {
 	float:left;
 	margin:0px 10px;
 }
-header h1 {
+header.page > h1 {
 	height:60px;
 }
-header h1 a {
+header.page h1 a {
 	text-decoration:none;
 	font:35pt 'Montserrat', sans-serif;
 	font-weight:bold;
+	color: #F3DE8A;
 }
 div.nav-wrapper {
-	background-color:#eaeaea;
+/*	background-color:#eaeaea; */
 	border-bottom:2px solid #777;
 	padding:4px;
 }
