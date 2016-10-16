@@ -11,41 +11,48 @@ body {
 }
 main {
 	position:relative;
-	width:80%;
+	width:100%;
 	background-color:#fefefe;
 	margin:30px auto;
 	padding:15px;
 	box-shadow:0px 0px 20px #aaa;
+	overflow: auto;
 }
+
+article {
+	overflow: auto;
+}
+
 
 /**********************************
 ----------------------------------
 	HEADER
 ----------------------------------
 **********************************/
-header {
+header.page {
 	-webkit-margin-before: 0 em;
     -webkit-margin-after: 0 em;
 	top:0px;
 	display:block;
 	border-bottom:4px solid #333;
-	background-color:#fefefe;
+	background-color: #272838;
 	padding-top:20px;
 }
-header img {
+header.page img {
 	float:left;
 	margin:0px 10px;
 }
-header h1 {
+header.page > h1 {
 	height:60px;
 }
-header h1 a {
+header.page h1 a {
 	text-decoration:none;
 	font:35pt 'Montserrat', sans-serif;
 	font-weight:bold;
+	color: #F3DE8A;
 }
 div.nav-wrapper {
-	background-color:#eaeaea;
+/*	background-color:#eaeaea; */
 	border-bottom:2px solid #777;
 	padding:4px;
 }
@@ -117,13 +124,15 @@ aside.home, aside.details {
 
 /**********************************
 ----------------------------------
-	HOME
+	DETAILS PAGES
 ----------------------------------
 **********************************/
 img.pet-pix {
 	width: 100%;
+	margin-top: 10px;
 }
 
+<<<<<<< HEAD
 
 /**********************************
 ----------------------------------
@@ -261,3 +270,35 @@ aside.details ul li:hover {
 	transition:.5s ease-in-out;
 	background-color:#F9F8F8;
 }
+=======
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	main > article {
+		float: left;
+		width: 650px;
+		padding: 10px;
+	}
+	.main-wrapper {
+		max-width: 961px;
+		margin: 0 auto;
+	}
+
+	.sidebar1 {
+		float: right;
+		width: 250px;
+		padding: 10px;
+		margin-top: 30px;
+	}
+	img.pet-pix {
+		width: 50%;
+		float: left;
+		padding-right: 10px;
+	}
+	
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+>>>>>>> master
