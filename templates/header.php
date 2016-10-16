@@ -23,14 +23,15 @@ DATE: 		2016-10-18
 		<!-- meta tags -->
 		<meta charset="utf-8">
 		<title>Rescue Dogs and Cats</title>
+		<base href="http://localhost/animal-rescue/" />
 		<meta name="description" content="This is a multi-page website for rescuing two types of pets or animals.">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Micaela Pierce, Miguel Amezola">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- styling -->
-		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="<?php print CSS; ?>/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 		<!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
