@@ -20,12 +20,12 @@
 		</article> 
 	</section>
 	<aside class="details">
-		<h2>Facts About Frodo:</h2>
+		<h2><b>Facts</b> About Frodo:</h2>
 		<ul>
-			<li><b>AGE:</b> adult</li>
-			<li><b>SEX:</b> male</li>
-			<li><b>BREED:</b> yorkshire terrior</li>
-			<li><b>SIZE:</b> toy</li>
+			<li><b>AGE</b> adult</li>
+			<li><b>SEX</b> male</li>
+			<li><b>BREED</b> yorkshire terrior</li>
+			<li><b>SIZE</b> toy</li>
 		</ul>
 	</aside>
 </main>
