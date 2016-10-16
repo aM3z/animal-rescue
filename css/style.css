@@ -93,10 +93,10 @@ div.dd-link-wrapper:hover {
 
 /**********************************
 ----------------------------------
-	HOME
+	HOME (details)
 ----------------------------------
 **********************************/
-section.home {
+section.home, section.details {
 	display:inline-block;
 	width:75%;
 	vertical-align:top;
@@ -104,7 +104,7 @@ section.home {
 	padding:10px;
 	box-sizing:border-box;
 }
-aside.home {
+aside.home, aside.details {
 	display:inline-block;
 	box-sizing:border-box;
 	padding:10px;
@@ -123,3 +123,93 @@ img.pet-pix {
 	width: 100%;
 }
 
+/**********************************
+----------------------------------
+	ADOPTION
+----------------------------------
+**********************************/
+section.index {
+	width:45%;
+	display:inline-block;
+	margin:2.3%;
+	position:relative;
+	box-sizing:border-box;
+	padding:20px 30px;
+	background-color:#F9F8F8;
+	border:3px double #272838;
+}
+section.index header {
+	padding-top:0px;
+	border:3px double #F3DE8A;
+	outline:10px solid #7E7F9A;
+}
+section.index h2 {
+	margin:0 auto;
+	text-align:center;
+	border-bottom:0px;
+	padding:10px;
+}
+section.index h2 a {
+	text-decoration:none;
+}
+section.index article {
+	padding:20px;
+	position:relative;
+	top:20px;
+	margin-bottom:10px;
+	overflow:hidden;
+	border:4px double #7E7F9A;
+}
+section.index img {
+	max-width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:block;
+}
+section.index article p {
+	padding:10px;
+	text-align:justify;
+	height:100px;
+	overflow:auto;
+	position:relative;
+	display:block;
+	background-color:#F9F8F8;
+	border-top:1px solid #272838;
+	outline:10px solid #F9F8F8;
+	opacity: 0;
+	transition:opacity 1s ease-in-out .05s; 
+
+}
+section.index:hover img {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+	transition:1s;
+}
+section.index:hover article p{
+	z-index:2;
+	opacity:1;
+	transition:opacity 1s ease-in-out .05s; 
+}
+
+
+/**********************************
+----------------------------------
+	DETAILS
+----------------------------------
+**********************************/
+section.details article header {
+	background-image:url('./../images/dogs/yorkie.jpg');
+	background-size:cover;
+	border:4px double #272838;
+	padding-left:20px;
+	color:#F9F8F8;
+	font-size:20px;
+	text-shadow:2px 2px #272838, 2px -2px #272838, -2px -2px #272838, -2px 2px #272838;
+}
+section.details article header h1 {
+	border-bottom:5px solid #272838;
+	display:inline-block;
+	padding:0px 20px 0px 5px;
+}
+section.details 
