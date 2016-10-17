@@ -14,14 +14,18 @@
 				<h1>Meet Frodo!</h1>
 			</header>
 			<ul>
-				<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li>
+				<!--<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li> -->
 				<li><div class=imghold><img src="./../../images/dogs/yorkie.jpg"/></div></li>
 				<li><div class=imghold><img src="./../../images/dogs/yorkshire-terrier-06.jpg"/></div></li>
 			</ul>
 			<p>
-				Frodo is an adventurous little fellow. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia nec ipsum id interdum. Nunc porta, lorem vitae aliquam gravida, sem nunc vestibulum lorem, sed tempus sem tellus eu turpis. Nullam et enim vitae eros pretium finibus. Praesent lorem elit, vestibulum sit amet hendrerit a, vulputate ac nulla. Ut quis enim eget tellus aliquet fermentum. Proin tristique sagittis augue ut congue. Nam in nisl a tellus fermentum aliquet in ut elit. Quisque semper suscipit nunc, vel euismod odio ullamcorper ut.
+				Frodo is an adventurous little fellow. We believe he is around three to four years old and has been neutered, vaccinated and microchipped.
 				<br><br>
-				Phasellus quis tellus at lectus imperdiet pellentesque eget quis libero. Fusce placerat pellentesque massa vitae fermentum. Cras ullamcorper vestibulum lacus vel posuere. Proin ornare vitae lacus ac dictum. Nullam malesuada dictum diam ut eleifend. Maecenas dapibus rhoncus lectus sed scelerisque. Fusce aliquam magna ac lacus placerat volutpat. 
+				Frodo is a yorkshire terrier who's full of energy and always ready for walks and games of catch.
+				<br><br>
+				He is house trained and will be perfectly happy in an appartment but would need to be excersized daily. He's good with kids and other dogs but shows agression with cats and other small animals.
+				<br><br><br>
+				<code>Published: <time pubdate="pubdate">2016-10-07</time></code>
 			</p>
 		</article> 
 	</section>

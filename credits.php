@@ -47,7 +47,24 @@
 						<li>Little_tootie.jpg</li>
 						https://commons.wikimedia.org/wiki/File%3ALittle_tootie.JPG
 						By Portraitlady4306 (Own work) [Public domain], via Wikimedia Commons
-
+						
+						<li>Nova_Scotia_Duck_Tolling_Retriever_Portrait.jpg</li>			https://upload.wikimedia.org/wikipedia/commons/d/d0/Nova_Scotia_Duck_Tolling_Retriever_portrait.jpg
+						
+						<li>nstrholly.jpg</li>
+						http://www.dogbreedinfo.com/images16/NovaScotiaDuckTollingRetrieverHolly10Months5.JPG
+						
+						<li>nstdrcatch.jpg</li>
+						http://www.canisite.com/wp-content/uploads/no/nova-nova-scotia-duck-tolling-retriever-pet-ruby-breed.jpg
+						
+						<li>rotweiller.jpg</li>
+						http://dogs.petbreeds.com/l/131/Rottweiler
+						
+						<li>rotweiller2</li>
+						https://upload.wikimedia.org/wikipedia/commons/0/04/Rottweiler_kopf_2.jpg
+						
+						<li>rotweiller3</li>
+						https://upload.wikimedia.org/wikipedia/commons/9/92/Rottweiler_Aaron.jpg
+						
 					</ol>
 
 					<h2>Cat Images</h2>
