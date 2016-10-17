@@ -308,6 +308,7 @@ section.details li div.imghold {
 section.details li img {
 	min-height:100px;
 	max-height:100px;
+	min-width:100px;
 	position: absolute;
     top: -9999px;
     bottom: -9999px;
