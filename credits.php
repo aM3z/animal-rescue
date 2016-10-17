@@ -135,6 +135,29 @@
 							<li>https://commons.wikimedia.org/wiki/File%3AScottish_fold.jpg</li>
 							<li>By No machine-readable author provided. Portlembec~commonswiki assumed (based on copyright claims). [Public domain], via Wikimedia Commons</li>
 						</ul>
+						<ul>
+							<li>curl1.jpg</li>
+							<li>http://inspirationseek.com/wp-content/uploads/2014/08/American-Curl-Cat-Yellow-Eyes.jpg</li>
+						</ul>
+						<ul>
+							<li>curl2.jpg</li>
+							<li>http://www.petfinder.my/photo/pet/475/47550-190677-l.jpg</li>
+						</ul>
+						<ul>
+							<li>curl3.jpg</li>
+							<li>http://www.zastavki.com/pictures/originals/2013/Animals___Cats__Beautiful_silver_Scottish_Fold_cat_045178_.jpg</li>
+						</ul>
+						<ul>
+							<li>nor3.jpg</li>
+							<li>https://www.askideas.com/media/24/Norwegian-Forest-Cat-Sitting-In-Garden.jpg</li>
+						</ul>
+						<ul>
+							<li>nor2.jpg</li>
+							<li>https://s-media-cache-ak0.pinimg.com/236x/1a/55/34/1a5534611b20476ef4de06fdd1a339cc.jpg</li>
+						</ul>
+						<ul>
+							<li>nor1.jpg</li>
+							<li>http://www.angelsnoutlaws.com/Hagen%207%20months.jpg</li>
 					</ol>
 				</article>			
 			</main>
