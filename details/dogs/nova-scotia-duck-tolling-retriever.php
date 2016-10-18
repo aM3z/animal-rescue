@@ -9,14 +9,14 @@
 				
 	<section class="details">
 		<article> 
-			<header style="	background-image:url('./../../images/dogs/nstr.jpg');
+			<header style="	background-image:url('<?php print IMAGES; ?>/dogs/nstr.jpg');
  background-position-y:18%">
 				<h1>Meet Pippin!</h1>
 			</header>
 			<ul>
 				<!--<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li> -->
-				<li><div class=imghold><img src="./../../images/dogs/nstdrcatch.jpg"/></div></li>
-				<li><div class=imghold><img src="./../../images/dogs/nova_scotia_duck_tolling_retriever_portrait.jpg"/></div></li>
+				<li><div class=imghold><img src="<?php print IMAGES; ?>/dogs/nstdrcatch.jpg"/></div></li>
+				<li><div class=imghold><img src="<?php print IMAGES; ?>/dogs/Nova_Scotia_Duck_Tolling_Retriever_portrait.jpg"/></div></li>
 			</ul>
 			<p>
 				Pippin is a sweetheart, cool and calm unlike her namesake. She is likely 7 years old and has been spayed, vaccinated and microchipped.
