@@ -45,6 +45,10 @@ DATE: 		2016-10-18
 				</div>
 				<nav>
 					<div class="nav-wrapper main-wrapper">
+					<!-- zeroth dropdown -->
+					<div class="dropdown">
+					<a href="<?php print BASE_PATH; ?>/index.php" class="menubtn">Home</a>
+					</div>
 					<!-- first dropdown -->
 					<div class="dropdown">
 					<a href="<?php print BASE_PATH; ?>/dog-index.php" class="menubtn">Dogs</a>
@@ -69,20 +73,10 @@ DATE: 		2016-10-18
 					<!-- third dropdown -->
 					<div class="dropdown">
 						<a href="<?php print BASE_PATH; ?>/about.php" class="menubtn">About Us</a>
-						<!--
-						<div class="dropdown-content">
-							<a href=""></a>
-						</div>
-						-->
 					</div>
 					<!-- fourth dropdown -->
 					<div class="dropdown">
 					<a href="<?php print BASE_PATH; ?>/credits.php" class="menubtn">Credits</a>
-						<!--
-						<div class="dropdown-content">
-							<a href=""></a>
-						</div>
-						-->
 					</div>
 				</div>
 				</nav>
