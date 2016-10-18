@@ -10,6 +10,17 @@
 					<header>
 						<h1>Citations</h1>
 					</header>
+					<h2>General Images</h2>
+					<ol>
+						<ul>
+							<li>logo.gif</li>
+							<li>http://www.clipartbest.com/cliparts/MTL/Lb6/MTLLb6eBc.gif</li>
+						</ul>
+						<ul>
+							<li>fabricbg.png</li>
+							<li>http://subtlepatterns.com/fabric-of-squares/</li>
+						</ul>
+					</ol>
 					<h2>Dog Images</h2>
 					<ol>
 						<li>Welsh_Springer_Spaniel.jpg</li>
