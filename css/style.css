@@ -192,7 +192,7 @@ div.dd-link-wrapper a {
 	padding-right:10px;
 	color:#F9F8F8;
 	font-weight:lighter;
-	font-size:1.5em;
+	font-size:.8em;
 }
 div.dropdown:hover .dropdown-content {
 	display:block;
@@ -241,7 +241,7 @@ div.call-to-action > p {
 ----------------------------------
 **********************************/
 article.welcome-msg > p {
-	font-size: 1.3em;	
+	font-size: 1em;	
 }
 
 /**********************************
@@ -264,7 +264,6 @@ img.pet-ad {
 ----------------------------------
 **********************************/
 section.index {
-	//width:45%;
 	display:inline-block;
 	margin:2.3%;
 	position:relative;
