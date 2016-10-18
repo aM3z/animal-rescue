@@ -84,6 +84,7 @@ header.page {
 header.page img {
 	float:left;
 	margin:0px 10px;
+	height:60px;
 }
 header.page > h1 {
 	height:60px;
@@ -93,10 +94,15 @@ header.page h1 a {
 	font:35pt 'Montserrat', sans-serif;
 	font-weight:bold;
 	color: #F3DE8A;
+	transition:.1s ease-in-out;
+	border-bottom:0px solid #F3DE8A;
+}
+header.page h1 a:hover {
+	border-bottom:3px solid #F3DE8A;
+	transtion:.1s ease-in-out;
 }
 div.nav-wrapper {
-/*	background-color:#eaeaea; */
-	border-bottom:2px solid #777;
+	border-bottom:2px solid #F9F8F8;
 	padding:4px;
 }
 div.dropdown {
@@ -105,40 +111,49 @@ div.dropdown {
 	text-align:center;
 	margin-right:2px;
 	padding:8px 5px;
-	border:3px double #fff;
-	width:100px;
-	background-color:#e1e1e1;
+	border:3px double #272838;
+	width:104px;
+	background-color:#7E7F9A;
 }
 div.dropdown a.menubtn {
 	font:12pt 'Montserrat', sans-serif;
 	text-decoration:none;
+	color:#F9F8F8;
+	padding:2px;
 }
 div.dropdown-content {
 	display:none;
 	position:absolute;
 	z-index:100;
-	top: 38px;
-	left:0px;
-	transition:.5s;
+	left:-2px;
+	transition:top 2s;
 }
 div.dropdown-content .dd-link-wrapper {
 	display:block;
-	background-color:#e1e1e1;
+	background-color:#7E7F9A;
 	text-align:left;
 	width:100px;
 	padding:5px;
+	border:4px solid #7E7F9A;
 }
 div.dd-link-wrapper a {
 	text-decoration:none;
 	border-bottom:1px solid;
 	padding-right:10px;
+	color:#F9F8F8;
+	font-weight:lighter;
+	font-size:12px;
 }
 div.dropdown:hover .dropdown-content {
 	display:block;
-	transition:.5s;
+	transition:top 2s;
+	top:38px;
+}
+div.dropdown:hover a.menubtn {
+	border-bottom:3px solid;
 }
 div.dd-link-wrapper:hover {
-	background-color:#eaeaea;
+	background-color:#5C5D71;
 	transition:.5s;
 }
 
