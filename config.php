@@ -1,6 +1,6 @@
 <?php
 // if this is on haven or river
-if($_SERVER['SERVER_NAME'] == 'www.cs.plu.edu') {
+if($_SERVER['SERVER_NAME'] == 'www.cs.plu.edu' || $_SERVER['SERVER_NAME'] == 'cs.plu.edu') {
 	// get path to this config file
 	$path_here = "https://www.cs.plu.edu/~" . substr(__DIR__, 14);
 	// remove "public_html/" from path
