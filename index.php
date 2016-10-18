@@ -15,7 +15,7 @@
 			<main role="main" class="clear main-wrapper">
 
 							
-				<article> 
+				<article class="welcome-msg"> 
 					<header>
 						<h1>Welcome!</h1>
 					</header>

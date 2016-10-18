@@ -103,9 +103,12 @@ header.page {
 	top:0px;
 	display:block;
 	border-bottom:4px solid #333;
-	background-color: #272838;
 	padding-top:20px;
-/*	margin-bottom: 10px; */
+	background: #272838;
+	background: -webkit-linear-gradient(#272838, #2b2d52, #272838);
+	background: -o-linear-gradient(#272838, #2b2d52, #272838);
+	background: -moz-linear-gradient(#272838, #2b2d52, #272838);
+	background: linear-gradient(#272838, #2b2d52, #272838);
 }
 header.page img {
 	float:left;
@@ -217,6 +220,15 @@ div.call-to-action > p {
 	DEFAULT SIDEBAR (SIDEBAR1)
 ----------------------------------
 **********************************/
+article.welcome-msg > p {
+	font-size: 1.3em;	
+}
+
+/**********************************
+----------------------------------
+	DEFAULT SIDEBAR (SIDEBAR1)
+----------------------------------
+**********************************/
 div.sidebar1 {
 	text-align: center;
 }
@@ -225,17 +237,6 @@ img.pet-ad {
 	width: 170px;
 	border-radius: 50%;
 }
-
-/**********************************
-----------------------------------
-	DETAILS PAGES
-----------------------------------
-**********************************/
-img.pet-pix {
-	width: 100%;
-	margin-top: 10px;
-}
-
 
 /**********************************
 ----------------------------------
@@ -312,6 +313,10 @@ section.index:hover article p{
 	DETAILS
 ----------------------------------
 **********************************/
+img.pet-pix {
+	width: 100%;
+	margin-top: 10px;
+}
 section.details {
 	display:inline-block;
 	width:75%;
@@ -457,12 +462,12 @@ footer.main-wrapper {
 	font:13px courier new;
 	text-align:center;
 	margin:30px auto;
-	width:40%;
+	width: 250px;
 }
 footer.main-wrapper p {
 	vertical-align:top;
 	display:inline-block;
-	width:49%;
+	width:100%;
 	padding:8px;
 	text-align:justify;
 	box-sizing:border-box;
@@ -477,7 +482,14 @@ footer.main-wrapper p {
 
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	footer.main-wrapper {
+		width: 500px;
+	}
+	footer.main-wrapper p {
+		width:49%;
+	}
+}
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	main > article {
 		float: left;
