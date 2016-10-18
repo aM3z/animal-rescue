@@ -14,11 +14,13 @@
 					<ol>
 						<ul>
 							<li>logo.gif</li>
-							<li>http://www.clipartbest.com/cliparts/MTL/Lb6/MTLLb6eBc.gif</li>
+							<li>http://www.clipartbest.com/logo-paw</li>
+							<li>By ClipArtBest.com http://www.clipartbest.com/logo-paw</li>
 						</ul>
 						<ul>
 							<li>fabricbg.png</li>
 							<li>http://subtlepatterns.com/fabric-of-squares/</li>
+							<li>By Heliodor Jalba (own work) https://about.me/heliodor</li>
 						</ul>
 					</ol>
 					<h2>Dog Images</h2>
@@ -70,27 +72,33 @@
 						</ul>	
 						<li>Nova_Scotia_Duck_Tolling_Retriever_Portrait.jpg</li>
 						<ul>
-							<li>https://upload.wikimedia.org/wikipedia/commons/d/d0/Nova_Scotia_Duck_Tolling_Retriever_portrait.jpg</li>
+							<li>https://commons.wikimedia.org/wiki/File:Nova_Scotia_Duck_Tolling_Retriever_portrait.jpg</li>
+							<li>By Christopher Woo, Happy Desks http://www.flickr.com/photos/47643206@N00/185677338/ (Own Work) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons</li>
 						</ul>	
 						<li>nstrholly.jpg</li>
 						<ul>
 							<li>http://www.dogbreedinfo.com/images16/NovaScotiaDuckTollingRetrieverHolly10Months5.JPG</li>
+							<li>Dog Breed Info Center http://www.dogbreedinfo.com/novascotiaducktollingphotos.htm </li>
 						</ul>	
 						<li>nstdrcatch.jpg</li>
 						<ul>
 							<li>http://www.canisite.com/wp-content/uploads/no/nova-nova-scotia-duck-tolling-retriever-pet-ruby-breed.jpg</li>
+							<li>Puppyoung.com http://www.puppyoung.com/2016/03/nova-scotia-duck-tolling-retriever-dog/</li>
 						</ul>
 						<li>rotweiller.jpg</li>
 						<ul>
-							<li>http://dogs.petbreeds.com/l/131/Rottweiler</li>
+							<li>https://files.graphiq.com/465/media/images/Rottweiler_9246115.jpg</li>
+							<li>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%22Prince%22_%287216225820%29.jpg/489px-%22Prince%22_%287216225820%29.jpg. Originally uploaded by user Ultra7 on Wikimedia Commons. CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/deed.en).</li>
 						</ul>	
 						<li>rotweiller2</li>
 						<ul>
 							<li>https://upload.wikimedia.org/wikipedia/commons/0/04/Rottweiler_kopf_2.jpg</li>
+							<li> gespendet von: Dr. Manfred Herrmann Allgemeiner Deutscher Rottweiler-Klub (ADRK) e.V. http://www.ADRK.de, [CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons</li>
 						</ul>	
 						<li>rotweiller3</li>
 						<ul>
 							<li>https://upload.wikimedia.org/wikipedia/commons/9/92/Rottweiler_Aaron.jpg</li>
+							<li>No machine-readable author provided. SERRANO76 assumed (based on copyright claims). [CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons</li>
 						</ul>	
 					</ol>
 
@@ -149,26 +157,32 @@
 						<ul>
 							<li>curl1.jpg</li>
 							<li>http://inspirationseek.com/wp-content/uploads/2014/08/American-Curl-Cat-Yellow-Eyes.jpg</li>
+							<li><li>By No machine-readable author provided. Portlembec~commonswiki assumed (based on copyright claims). [Public domain], via Wikimedia Commons</li>
 						</ul>
 						<ul>
 							<li>curl2.jpg</li>
 							<li>http://www.petfinder.my/photo/pet/475/47550-190677-l.jpg</li>
+							<li>petFinder.my http://www.petfinder.my/comments/47550/</li>
 						</ul>
 						<ul>
 							<li>curl3.jpg</li>
 							<li>http://www.zastavki.com/pictures/originals/2013/Animals___Cats__Beautiful_silver_Scottish_Fold_cat_045178_.jpg</li>
+							<li>HD Cats http://hdcats.com/a-special-and-cute-scottish-fold-cat-that-can-be-good-friends/</li>
 						</ul>
 						<ul>
 							<li>nor3.jpg</li>
 							<li>https://www.askideas.com/media/24/Norwegian-Forest-Cat-Sitting-In-Garden.jpg</li>
+							<li>Cheryl & Rob Sarges, Winterfry Cattery http://www.winterfyre.com/former.htm</li>
 						</ul>
 						<ul>
 							<li>nor2.jpg</li>
 							<li>https://s-media-cache-ak0.pinimg.com/236x/1a/55/34/1a5534611b20476ef4de06fdd1a339cc.jpg</li>
+							<li>WeSharePics http://wesharepics.info/imageggkl-grey-tabby-norwegian-forest-cat.asp</li>
 						</ul>
 						<ul>
 							<li>nor1.jpg</li>
 							<li>http://www.angelsnoutlaws.com/Hagen%207%20months.jpg</li>
+							<li>Sharon Worthington, Becky Hendriks: Angelsnoutlaws http://www.angelsnoutlaws.com/norwegian-forest-cats</li>
 					</ol>
 				</article>			
 			</main>

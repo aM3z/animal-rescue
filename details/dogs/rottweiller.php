@@ -13,7 +13,6 @@
 				<h1>Meet Merry!</h1>
 			</header>
 			<ul>
-				<!--<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li> -->
 				<li><div class=imghold><img src="./../../images/dogs/rotweiller3.jpg"/></div></li>
 				<li><div class=imghold><img src="./../../images/dogs/rotweiller2.jpg"/></div></li>
 			</ul>

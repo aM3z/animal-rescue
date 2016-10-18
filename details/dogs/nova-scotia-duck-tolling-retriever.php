@@ -14,7 +14,6 @@
 				<h1>Meet Pippin!</h1>
 			</header>
 			<ul>
-				<!--<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li> -->
 				<li><div class=imghold><img src="<?php print IMAGES; ?>/dogs/nstdrcatch.jpg"/></div></li>
 				<li><div class=imghold><img src="<?php print IMAGES; ?>/dogs/Nova_Scotia_Duck_Tolling_Retriever_portrait.jpg"/></div></li>
 			</ul>

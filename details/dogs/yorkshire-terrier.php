@@ -13,7 +13,6 @@
 				<h1>Meet Frodo!</h1>
 			</header>
 			<ul>
-				<!--<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li> -->
 				<li><div class=imghold><img src="./../../images/dogs/yorkie.jpg"/></div></li>
 				<li><div class=imghold><img src="./../../images/dogs/yorkshire-terrier-06.jpg"/></div></li>
 			</ul>

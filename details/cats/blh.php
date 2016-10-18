@@ -12,9 +12,7 @@
 				<h1>Meet Winston!</h1>
 			</header>
 			<ul>
-				<!--<li><div class=imghold><img src="./../../images/dogs/little_tootie.jpg"/></div></li> -->
 				<li><div class=imghold><img src="<?php print IMAGES; ?>/cats/British_Longhair.jpg"/></div></li>
-				<!-- <li><div class=imghold><img src="./../../images/cats/curl2.jpg"/></div></li> -->
 			</ul>
 			<p>
 				Winston has long hair and he don't care. He is one of the most handsome cats here and he knows it! He has been neutered, vaccinated and microchipped. 
