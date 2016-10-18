@@ -140,13 +140,14 @@ div.dropdown a.menubtn {
 	text-decoration:none;
 	color:#F9F8F8;
 	padding:2px;
+	border-bottom:3px solid #7E7F9A;
 }
 div.dropdown-content {
 	display:none;
 	position:absolute;
 	z-index:100;
 	left:-2px;
-	transition:top 2s;
+	transition: 2s;
 }
 div.dropdown-content .dd-link-wrapper {
 	display:block;
@@ -166,15 +167,16 @@ div.dd-link-wrapper a {
 }
 div.dropdown:hover .dropdown-content {
 	display:block;
-	transition:top 2s;
+	transition: 2s;
 	top:38px;
 }
 div.dropdown:hover a.menubtn {
 	border-bottom:3px solid;
+	transition:.3s;
 }
 div.dd-link-wrapper:hover {
 	background-color:#5C5D71;
-	transition:.5s;
+	transition:.3s;
 }
 
 /**********************************
@@ -426,6 +428,26 @@ article.full-width {
 	width: 100%;
 }
 
+/**********************************
+----------------------------------
+	FOOTER
+----------------------------------
+**********************************/
+footer.main-wrapper {
+	font:13px courier new;
+	text-align:center;
+	margin:30px auto;
+	width:40%;
+}
+footer.main-wrapper p {
+	vertical-align:top;
+	display:inline-block;
+	width:49%;
+	padding:8px;
+	text-align:justify;
+	box-sizing:border-box;
+	border-top:1px solid;
+}
 /**********************************
 ----------------------------------
 	COMPATABILITY
