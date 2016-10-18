@@ -18,9 +18,9 @@
 		<section class="index">
 			<header><h2><a href="<?php print DETAILS; ?>/cats/blh.php">Winston</a></h2></header>
 			<article>
-				<img src="<?php print IMAGES; ?>/cats/British_Longhair.jpg"/>
+				<img src="<?php print IMAGES; ?>/cats/British_Longhair.jpg" style="top: -100px;"/>
 				<p>
-				Curabitur rhoncus tellus nunc, et finibus nunc consectetur eu. Donec vestibulum commodo libero, sit amet viverra nibh porta non. Suspendisse pellentesque at nisl sit amet blandit. Proin sagittis, nibh vitae porta accumsan, tortor felis malesuada ex, et faucibus arcu metus et leo. Morbi massa arcu, varius eget sapien et, vehicula posuere massa. Aenean lacinia urna lacus. Praesent ligula elit, fermentum id leo nec, pellentesque tempus sem.
+				Winston has long hair and he don't care. He is one of the most handsome cats here and he knows it! He has been neutered, vaccinated and microchipped. 
 				</p>
 			</article>
 		</section>
