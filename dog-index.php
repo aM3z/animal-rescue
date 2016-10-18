@@ -1,6 +1,6 @@
 <?php 
 	require('./config.php');
-	require('./templates/header.php'); 
+	require('./includes/header.php'); 
 
 ?>
 
@@ -51,6 +51,6 @@
 			
 <?php 
 
-	require('./templates/footer.php'); 
+	require('./includes/footer.php'); 
 
 ?>

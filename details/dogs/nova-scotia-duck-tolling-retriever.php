@@ -1,7 +1,7 @@
 <?php 
 
 	require('../../config.php');
-	require('./../../templates/header.php'); 
+	require('./../../includes/header.php'); 
 	
 
 ?>
@@ -44,4 +44,4 @@
 	</aside>
 </main>
 
-<?php require('../../templates/footer.php'); ?>
+<?php require('../../includes/footer.php'); ?>

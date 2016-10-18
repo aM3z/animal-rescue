@@ -2,7 +2,7 @@
 
 
 	require('./config.php');
-	require('./templates/header.php'); 
+	require('./includes/header.php'); 
 
 ?>
 		
@@ -26,4 +26,4 @@
 
 			</main>
 
-<?php require('./templates/footer.php'); ?>
+<?php require('./includes/footer.php'); ?>

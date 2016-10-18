@@ -1,7 +1,7 @@
 <?php 
 
 	require('../../config.php');
-	require('../../templates/header.php'); 
+	require('../../includes/header.php'); 
 
 ?>
 
@@ -18,8 +18,8 @@
 
 				</article>
 
-				<?php require('../../templates/sidebar1.php'); ?>
+				<?php require('../../includes/sidebar1.php'); ?>
 
 			</main>
 
-<?php require('../../templates/footer.php'); ?>
+<?php require('../../includes/footer.php'); ?>

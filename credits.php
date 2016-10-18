@@ -1,12 +1,12 @@
 <?php 
 
 	require('./config.php');
-	require('./templates/header.php'); 
+	require('./includes/header.php'); 
 
 ?>
 
 			<main role="main" class="clear main-wrapper">
-				<article class="credits">
+				<article class="full-width">
 					<header>
 						<h1>Citations</h1>
 					</header>
@@ -163,7 +163,7 @@
 			</main>
 <?php 
 
-	require('./templates/footer.php'); 
+	require('./includes/footer.php'); 
 
 ?>
 
