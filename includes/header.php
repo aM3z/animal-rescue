@@ -66,7 +66,7 @@ DATE: 		2016-10-18
 							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/abyssinian.php">Abyssinian</a></div> -->
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/american-curl.php">Harry</a></div>
 							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/egyptian-mau-bronze.php">Egyptian Mau Bronze</a></div> -->
-							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/korat.php">Hermione</a></div> -->
+							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/blh.php">Winston</a></div>
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/norwegian-forest.php">Hagrid</a></div>
 						</div>
 					</div>

@@ -25,6 +25,8 @@
 					<p>The dogs and cats featured here are up for adoption. They would make great pets. They've all been properly vaccinated and have been examined by a veterinarian. New arrivals are featured to the right. You can find more information on each pet by using the main menu to navigate to their page.</p>
 				
 					<p>If adoption is not an option for you, any support of our efforts would be greatly appreciated.</p>
+
+					<p>Check out the adoption pages listing animals available for adoption: <a href="./dog-index.php">dogs</a> and <a href="./cat-index.php">cats</a>.</p>
 				</article>
 
 
