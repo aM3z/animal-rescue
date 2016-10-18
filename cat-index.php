@@ -15,7 +15,7 @@
 				</p>
 			</article>
 		</section>
-		
+		<!--	
 		<section class="index">
 			<header><h2><a href="<?php print DETAILS; ?>/cats/abyssinian.php">Hermione</a></h2></header>
 			<article>
@@ -25,7 +25,7 @@
 				</p>
 			</article>
 		</section>
-		
+		-->
 		<section class="index">
 		<header><h2><a href="<?php print DETAILS; ?>/cats/norwegian-forest.php">Hagrid</a></h2></header>
 			<article>

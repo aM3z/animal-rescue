@@ -15,7 +15,7 @@
 				</p>
 			</article>
 		</section>
-		
+		<!--	
 		<section class="index">
 			<header><h2><a href="<?php print DETAILS; ?>/dogs/welsh-springer-spaniel.php">Samwise</a></h2></header>
 			<article>
@@ -25,7 +25,7 @@
 				</p>
 			</article>
 		</section>
-		
+		-->	
 		<section class="index">
 			<header><h2><a href="<?php print DETAILS; ?>/dogs/nova-scotia-duck-tolling-retriever.php">Pippin</a></h2></header>
 			<article>

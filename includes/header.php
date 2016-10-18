@@ -55,7 +55,7 @@ DATE: 		2016-10-18
 						<div class="dropdown-content">
 						<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/nova-scotia-duck-tolling-retriever.php">Pippin</a></div>
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/rottweiller.php">Merry</a></div>
-							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/welsh-springer-spaniel.php">Sam</a></div>
+							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/welsh-springer-spaniel.php">Sam</a></div> -->
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/dogs/yorkshire-terrier.php">Frodo</a></div>
 						</div>
 					</div>
@@ -63,10 +63,10 @@ DATE: 		2016-10-18
 					<div class="dropdown">
 						<a href="<?php print BASE_PATH; ?>/cat-index.php" class="menubtn">Cats</a>
 						<div class="dropdown-content">
-							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/abyssinian.php">Abyssinian</a></div>
+							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/abyssinian.php">Abyssinian</a></div> -->
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/american-curl.php">Harry</a></div>
-							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/egyptian-mau-bronze.php">Egyptian Mau Bronze</a></div>
-							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/korat.php">Hermione</a></div>
+							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/egyptian-mau-bronze.php">Egyptian Mau Bronze</a></div> -->
+							<!-- <div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/korat.php">Hermione</a></div> -->
 							<div class="dd-link-wrapper"><a href="<?php print DETAILS; ?>/cats/norwegian-forest.php">Hagrid</a></div>
 						</div>
 					</div>
