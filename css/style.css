@@ -44,7 +44,11 @@ article {
 	overflow: auto;
 	box-sizing: border-box;
 }
-
+blockquote {
+	font-size: 2em;
+	font-style: oblique;
+	color: #a5a5a5;
+}
 footer {
 	padding-top: 60px;
 }
@@ -54,7 +58,7 @@ footer {
 	BUTTON STYLES
 ----------------------------------
 **********************************/
-button.default {
+a.btn-default {
     border-radius: 5px;
     padding: 10px;
     font-weight: bolder;
@@ -63,6 +67,8 @@ button.default {
 	-webkit-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.75);
+	color: #272838;
+	text-decoration: none;
 }
 
 button.adopt {
@@ -204,6 +210,20 @@ div.call-to-action > p {
     background: rgba(39, 40, 56, 0.48);
     padding: 0 10px;
     box-shadow: 0 0 15px rgba(39, 40, 56, 0.48);
+}
+
+/**********************************
+----------------------------------
+	DEFAULT SIDEBAR (SIDEBAR1)
+----------------------------------
+**********************************/
+div.sidebar1 {
+	text-align: center;
+}
+img.pet-ad {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
 }
 
 /**********************************

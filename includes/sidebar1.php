@@ -1,8 +1,18 @@
 <div class="sidebar1">
 	<article>
-		<h2>Title Here</h2>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-		</p>
+		<h2>Recent Arrivals</h2>
+		<figure class="pet-ad">
+			<img class="pet-ad" src="<?php print IMAGES; ?>/dogs/rotweiller2.jpg">
+		  	<figcaption>Merry is a confident, vivacious.</figcaption>
+		</figure>
+		<figure class="pet-ad">
+			<img class="pet-ad" src="<?php print IMAGES; ?>/dogs/Nova_Scotia_Duck_Tolling_Retriever_portrait.jpg">
+			<figcaption>Pippin is a sweetheart, cool and calm unlike her namesake.</figcaption>
+		</figure>
+		<figure class="pet-ad">
+			<img class="pet-ad" src="<?php print IMAGES; ?>/cats/nor3.jpg">
+			<figcaption>Hagrid isn't very talkative but loves pets.</figcaption>
+		</figure>
 </div>
 
 
