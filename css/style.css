@@ -52,6 +52,22 @@ blockquote {
 footer {
 	padding-top: 60px;
 }
+h1, h2 {
+	font-family:'Montserrat', sans serif;
+	color:#272838;
+	font-weight:900;
+}
+a {
+	color:#787993;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:visited {
+	color:#272838;
+}
 
 /**********************************
 ----------------------------------
@@ -266,6 +282,12 @@ section.index h2 {
 }
 section.index h2 a {
 	text-decoration:none;
+	border-bottom:2px solid #F9F8F8;
+	transition:.5s;
+}
+section.index h2 a:hover {
+	border-bottom:2px solid #7E7F9A;
+	transition:.5s;
 }
 section.index article {
 	padding:20px;
@@ -281,6 +303,7 @@ section.index img {
 	top:0px;
 	left:0px;
 	display:block;
+	transition:1s;
 }
 section.index article p {
 	padding:10px;
