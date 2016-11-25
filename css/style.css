@@ -504,6 +504,28 @@ footer.main-wrapper p {
 }
 /**********************************
 ----------------------------------
+	FORMS
+----------------------------------
+**********************************/
+section.button_float {
+	display:inline-block;
+	width:10%;
+	vertical-align:top;
+}
+section.button_float .submit_button {
+	position:fixed;
+}
+section.form_fields {
+	display:inline-block;
+	width:89%;
+	vertical-align:top;
+}
+
+
+
+
+/**********************************
+----------------------------------
 	COMPATABILITY
 ----------------------------------
 **********************************/
