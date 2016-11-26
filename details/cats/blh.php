@@ -31,7 +31,7 @@
 				<li><b>SEX</b> male</li>
 			</ul>
 		</article>
-		<center><button class="adopt">ADOPT ME!</button></center>
+		<center><a class="adopt" href="<?php echo ADOPTION_FORM; ?>">ADOPT ME!</a></center>
 	</aside>
 </main>
 

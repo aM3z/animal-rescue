@@ -14,3 +14,8 @@ define("BASE_PATH", $path_here);
 define("CSS", $path_here . "/css");
 define("IMAGES", $path_here . "/images");
 define("DETAILS", $path_here . "/details");
+
+// forms links
+define("DONATE_FORM", $path_here . "/forms/donate.php");
+define("VOLUNTEER_FORM", $path_here . "/forms/volunteer.php");
+define("ADOPTION_FORM", $path_here . "/forms/adoption.php");

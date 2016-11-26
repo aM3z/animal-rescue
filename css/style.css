@@ -91,7 +91,7 @@ a.btn-default {
 	text-decoration: none;
 }
 
-button.adopt {
+a.adopt {
 	margin:0 auto;
 	background-color:#7E7F9A;
 	padding:10px;
@@ -105,10 +105,10 @@ button.adopt {
 	border-radius:5px;
 	text-shadow:1px 1px #272838, 1px -1px #272838, -1px -1px #272838, -1px 1px #272838;
 }
-button.adopt:hover {
+a.adopt:hover {
 	text-decoration:underline;
 }
-button.adopt:active {
+a.adopt:active {
 	background-color:#68687F;
 	border:none;
 }
