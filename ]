@@ -117,36 +117,25 @@
 
 			<br>
 
-			<fieldset id="vol-important-details">
-				<legend>Important Details</legend>
-				<!-- max hours per month or week willing to volunteer -->
-				<label for="vol-max-hours">I would like to volunteer a maximum of </label>
-				<input type="number" id="vol-max-hours" name="volMaxHours" placeholder="10" min="1" max="744">
-				<label for="vol-max-hours-period" > hours per </label>
-				<input type="radio" id="vol-max-hours-period" name="volMaxHoursPeriod" value="month"> month or 
-				<input type="radio" id="vol-max-hours-period" name="volMaxHoursPeriod" value="week"> week.
-				
-				<br>
+			<fieldset id="vol-details">
+			<!-- max hours per month or week willing to volunteer -->
+			<label for="" ></label>
+			<input type="" id="" name="" value="">
+			<br>
 
-				<!-- skills and experience (see example for ideas) -->
-				<label for="vol-experience">Skills and Experience</label>
-				<br>
-				<textarea id="vol-experience" name="volExperience" cols="50" rows="10"></textarea>
-				<br>
+			<!-- skills and experience (see example for ideas) -->
+			<label for="" ></label>
+			<input type="" id="" name="" value="">
+			<br>
 
-				<!-- assignment preferences (see example for ideas) -->
-				<label for="vol-pref">Assignment Preferences</label>
-				<br>
-				<textarea id="vol-pref" name="volPref" cols="50" rows="10"></textarea>
+			<!-- assignment preferences (see example for ideas) -->
+			<label for="" ></label>
+			<input type="" id="" name="" value="">
 
 			</fieldset>
 
 			<!-- Volunteer Application Agreement (see example for ideas) -->
-			<p>I understand and agree that submitting this application form does not automatically register me as a volunteer, and that there may be certain qualifications I must meet, including the acceptance of established volunteer policies and procedures before I may begin volunteering.</p>
 
-			<p>By submitting this form, I attest that the information I have provided on the form is true and accurate.</p>
-
-			<input type="checkbox" name="volAgrees" value="true"> I agree.</input>
 
 		</section>
 	</form>
