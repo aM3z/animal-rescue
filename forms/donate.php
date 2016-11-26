@@ -19,22 +19,28 @@
 		<section class="form_fields">
 
 			<!-- current date -->
-			<label for="don-date">Date </label> 
-			<input id="don-date" type="date" name="donDate" value="<?php echo date('Y-m-d'); ?>">
+			<fieldset id="don-date">
+				<legend>Date</legend>
+				<input id="don-date" type="date" name="donDate" value="<?php echo date('Y-m-d'); ?>">
+			</fieldset>
+
+			<br>
 
 			<!-- amount (different amounts for different animals) -->
 			<fieldset id="don-amount">
 				<legend>Amount</legend>
 
-				<label class="don-label" for="don-amount-dog">Dogs $</label>
-				<input id="don-amount-dog" type="number" name="donAmountDog" value="0" min="0" set="1">
+				<label class="vol-label" for="don-amount-dog">Dogs</label>
+				<input id="don-amount-dog" type="number" name="donAmountDog" value="0" min="0" set="1" style="text-align: center;"> USD
+
+				<br><br>
+
+				<label class="vol-label" for="don-amount-cat">Cats</label>
+				<input  id="don-amount-cat" type="number" name="donAmountCat" value="0" min="0" set="1" style="text-align: center;"> USD
 
 				<br>
-
-				<label class="don-label" for="don-amount-cat">Cats $</label>
-				<input id="don-amount-cat" type="number" name="donAmountCat" value="0" min="0" set="1">
-
 				<br>
+				<hr>
 
 				<!-- payment period (weekly, monthly, quarterly etc.) -->
 				<label for="don-payment-period">Month to start </label>
@@ -48,9 +54,11 @@
 
 				<!-- month to start donation (should be stored as a date) -->
 				<label for="don-start">donation: </label>
-				<input id="don-start" type="date" name="donStart" value="<?php echo date('Y-m'); ?>">
+				<input id="don-start" type="date" name="donStart" value="<?php echo date('Y-m-d'); ?>">
 
 			</fieldset>
+
+			<br>
 
 			<!-- contact information (name, email, address, phone) -->
 
@@ -58,19 +66,19 @@
 
 				<legend>Contact Information</legend>
 
-				<label class="don-label" for="don-name">Name</label>
+				<label class="vol-label" for="don-name">Name</label>
 				<input type="text" id="don-name" name="donName" placeholder="Alan Turing">
 				<br>
 
-				<label class="don-label" for="don-email">Email</label>
+				<label class="vol-label" for="don-email">Email</label>
 				<input type="email" id="don-email" name="donEmail" placeholder="alan.turing@email.com">
 				<br>
 
-				<label class="don-label" for="don-address">Address</label>
+				<label class="vol-label" for="don-address">Address</label>
 				<input type="text" id="don-address" name="donAddress">
 				<br>
 
-				<label class="don-label" for="don-phone">Phone</label>
+				<label class="vol-label" for="don-phone">Phone</label>
 				<input type="telephone" id="don-phone" name="donPhone" placeholder="(253) 555-1234">
 
 			</fieldset>
@@ -79,6 +87,8 @@
 
 			<!-- whether or not this donation is a gift -->
 			<input id="don-gift" type="checkbox" name="donGift" value="true"> Yes, this donation is a gift!
+
+			<br><br><hr>
 
 		</section>
 	</form>
