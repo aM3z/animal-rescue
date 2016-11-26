@@ -1,12 +1,12 @@
 <?php 
 	require('./../config.php');
 	require('./../includes/header.php'); 
-
+	require('./../includes/process.php');
 ?>
 
 <main role="main" class="clear main-wrapper">
 	<h1>Adopt!</h1>
-	<form id="adoption_form" method="POST" action="processRequest.php">
+	<form id="adoption_form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 		<section class="button_float">
 			<input type="submit" value="ADOPT!" class="submit_button">
 			<br/><br/>
