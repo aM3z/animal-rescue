@@ -150,6 +150,8 @@
 
 			<input type="checkbox" name="volAgrees" value="true"> I agree.</input>
 
+			<br><br><hr>
+
 		</section>
 	</form>
 </main>
