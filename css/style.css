@@ -521,7 +521,33 @@ section.form_fields {
 	vertical-align:top;
 }
 
+fieldset.vol-contact > input, #vol-personal-details > input {
+	width: 200px;
+	padding: 0;
+}
 
+label.vol-label {
+	width: 90px;
+	display: inline-block;
+}
+
+fieldset.vol-avail {
+	width: 150px;
+	display: inline-block;
+}
+
+label.vol-avail-label {
+	width: 36px;
+	display: inline-block;
+}
+
+input#vol-max-hours {
+    text-align: center;
+}
+
+input#vol-current-date {
+	padding: 0;
+}
 
 
 /**********************************
