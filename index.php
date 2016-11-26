@@ -8,8 +8,10 @@
 		
 			<div class="banner">
 				<div class="call-to-action main-wrapper">
-					<p>Pet Lovers Unite</p>
-					<a class="btn-default" href="<?php print BASE_PATH; ?>/about.php">Learn more</a>
+					<p>Ways to help</p>
+					<a href="<?= ADOPTION_FORM ?>" class="btn-default">Adopt</a>
+					<a href="<?= VOLUNTEER_FORM ?>" class="btn-default">Volunteer</a>
+					<a href="<?= DONATE_FORM ?>" class="btn-default">Donate</a>
 				</div>
 			</div>
 			<main role="main" class="clear main-wrapper">
@@ -27,8 +29,8 @@
 					<p>If adoption is not an option for you, any support of our efforts would be greatly appreciated.</p>
 
 					<p>Check out the adoption pages listing animals available for adoption: <a href="./dog-index.php">dogs</a> and <a href="./cat-index.php">cats</a>.</p>
+					
 				</article>
-
 
 				<?php require("./includes/sidebar1.php"); ?>
 			</main>
