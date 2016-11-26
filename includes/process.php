@@ -1,7 +1,6 @@
 <?php
 
 	// check if data posted
-	// print data
 	$hasErrors = false;
 	$cleanValue = "";
 	$vars[] = array();
@@ -12,17 +11,24 @@
 			$vars[$key] = $cleanValue;			
 		}
 		
-		echo "success!";
+		echo "success!"; //delete later
 		
    } else {
    }
    
-   
+   //clean data
 	function cleanData ($data) {
 		$data = trim($data);
 		$data = stripslashes($data);
 		$data = htmlspecialchars($data);
 		return $data;
+	}
+	
+	//validate data
+	function validate($data, $field) {
+		switch($field) {
+			
+		}
 	}
 
 ?>
