@@ -1,4 +1,10 @@
-		<footer class="main-wrapper"> 
+			<footer class="main-wrapper"> 
+				<center>
+					<a href="<?= ADOPTION_FORM; ?>">Adoption</a>&nbsp;&nbsp;&nbsp;
+					<a href="<?= VOLUNTEER_FORM; ?>">Volunteer</a>&nbsp;&nbsp;&nbsp;
+					<a href="<?= DONATE_FORM; ?>">Donate</a>
+				</center>
+
 				<p>
 					<b><u>PLU CSCI 387 PROJECT 1</u></b> was created by Miguel Amezola and Micaela Pierce fall semester, 10/18/2016. All information displayed by it is fictatious; it is not a real rescue site. 
 				</p>
