@@ -1,0 +1,9 @@
+{"date":"2016-11-27","amount":{"dogs":"5","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"Miguel Amezola","email":"amezolma@plu.edu","address":"","phone":""},"isGift":"no"}
+{"date":"2016-11-27","amount":{"dogs":"10","cats":"2"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"Nora","email":"nora@email.com","address":"","phone":""},"isGift":"yes"}
+{"date":null,"amount":{"dogs":"0.08","cats":"0.04"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"aefds","email":"asdf@mail.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.08","cats":"0.04"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"aefds","email":"asdf@mail.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.00","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"asdf","email":"asdf@mail.com","address":"NEW","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"123","cats":"123"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"saf","email":"asdf@mail.com","address":"NEW","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"123","cats":"123"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"saf","email":"asdf@mail.com","address":"NEW","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"123","cats":"123"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"asf","email":"asdf@mail.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"123","cats":"123"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"asf","email":"asdf@mail.com","address":"","phone":""},"isGift":"no"}

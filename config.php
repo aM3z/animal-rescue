@@ -19,3 +19,6 @@ define("DETAILS", $path_here . "/details");
 define("DONATE_FORM", $path_here . "/forms/donate.php");
 define("VOLUNTEER_FORM", $path_here . "/forms/volunteer.php");
 define("ADOPTION_FORM", $path_here . "/forms/adoption.php");
+
+// set default timezone
+date_default_timezone_set('America/Los_Angeles');
