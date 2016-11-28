@@ -1,7 +1,7 @@
 <?php 
 
 	/**
-	 * Cleans and validates user-entered data.
+	 * Cleans user-entered data.
 	 *
 	 * This functions strips off leading/ending whitespaces,
 	 * backslahes, and HTML/PHP tags from a given string. 

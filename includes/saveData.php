@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * Writes cleaned and validated data in JSON format to a .json file.
+	 * Writes data to a .json file.
 	 *
 	 */
 	function saveData($data, $filename) {
