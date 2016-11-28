@@ -520,7 +520,7 @@ section.form_fields {
 input.submit_button {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 49%;
+	width: 48%;
 	background: #F3DE8A;
 	color: #272838;
 	font-weight: bolder;
@@ -542,7 +542,7 @@ label.vol-label {
 }
 
 fieldset.vol-avail {
-	width: 150px;
+	width: 75px;
 	display: inline-block;
 }
 
@@ -559,13 +559,23 @@ input#vol-current-date {
 	padding: 0;
 }
 
+textarea#vol-experience, textarea#vol-pref {
+	width: 100%;
+}
+
 .warning {
 	background-color: #ffabab;
+}
+
+p.warning, span.warning {
 	padding: 2px 5px;
 }
 
 .success {
 	background-color: #98f198;
+}
+
+p.success, span.success {
 	padding: 2px 5px;
 }
 
@@ -574,7 +584,7 @@ input#vol-current-date {
 	padding: 2px;
 }
 
-input#don-date {
+input#don-date, input#vol-current-date {
     background: #fff;
 	color: #000;
     border: 0;
@@ -663,6 +673,9 @@ input#don-date {
 	input.submit_button {
 		width: 86px;
 		margin-bottom: 15px;
+	}
+	fieldset.vol-avail {
+		width: 150px;
 	}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }

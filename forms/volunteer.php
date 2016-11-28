@@ -61,7 +61,7 @@
 					id="vol-email"
 					name="volEmail"
 					value="<?= $volEmail; ?>"
-					placeholder="alan.turing@email.com"
+					placeholder="alan.turing@enigma.com"
 					required
 				>
 				<?php if(!empty($volEmailErr)) echo '<span class="warning">' . $volEmailErr . '</span>';?>
@@ -113,8 +113,8 @@
 				<label class="vol-label" for="vol-sex" >Sex</label>
 				<select id="vol-sex" name="volSex">
 					<option></option>
-					<option value="male">Male</option>
-					<option value="female">Female</option>
+					<option value="male" <?php if($volSex == 'male') echo 'selected'; ?>>Male</option>
+					<option value="female" <?php if($volSex == 'female') echo 'selected'; ?>>Female</option>
 				</select>
 
 			</fieldset>
@@ -143,7 +143,7 @@
 					id="vol-emer-email" 
 					name="volEmerEmail"
 					value="<?= $volEmerEmail; ?>" 
-					placeholder="alan.turing@email.com"
+					placeholder="alan.turing@enigma.com"
 					required
 				>
 
@@ -244,16 +244,17 @@
 					id="vol-max-hours-period" 
 					name="volMaxHoursPeriod" 
 					value="month"
-					checked
+					<?php if($volMaxHoursPeriod == 'month') echo 'checked'; ?>
 				> month or 
 				<input 
 					type="radio" 
 					id="vol-max-hours-period" 
 					name="volMaxHoursPeriod" 
 					value="week"
+					<?php if($volMaxHoursPeriod == 'week') echo 'checked'; ?>
 				> week.
 				
-				<br>
+				<br><br>
 
 				<!-- skills and experience (see example for ideas) -->
 				<label for="vol-experience">Skills and Experience</label>
@@ -261,12 +262,11 @@
 				<textarea 
 					id="vol-experience" 
 					name="volExperience" 
-					cols="50" 
 					rows="10"
 					required
 				><?= $volExperience; ?></textarea>
 
-				<br>
+				<br><br>
 
 				<!-- assignment preferences (see example for ideas) -->
 				<label for="vol-pref">Assignment Preferences</label>
@@ -274,7 +274,6 @@
 				<textarea 
 					id="vol-pref" 
 					name="volPref" 
-					cols="50" 
 					rows="10"
 					required
 				><?= $volPref; ?></textarea>
