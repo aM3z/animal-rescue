@@ -13,7 +13,18 @@
 		"leaving" => "",
 		"name" => "",
 		"email" => "",
-		"phone" => ""
+		"phone" => "",
+		"mailAdd" => "",
+		"cityAdd" => "",
+		"stateAdd" => "",
+		"zipCode" => "",
+		"houseType" => "",
+		"kids" => "",
+		"pets" => "",
+		"snv" => "",
+		"todayDate" => "",
+		"aptDate" => "",
+		"aptTime" => ""
 	]; 	//array to hold variables, key = name value = value
 	
 	
@@ -41,7 +52,7 @@ function process() {
 		foreach ($vars as $key => $val) {
 			$tempError = "";
 			$tempError = validate($val, $key);
-			echo "test $key : $tempError; <br>";	//validating test delete later
+			echo "test $key : $tempError : $val; <br>";	//validating test delete later
 			if(!empty($tempError)) {
 				$hasErrors = true;
 				$varsErrors[$key] = $tempError;
@@ -59,9 +70,6 @@ function process() {
 	//validate data
 	function validate($data, $field) {
 		switch($field) {
-			case 'submitButton' : {
-				return "";
-			}
 			case 'petName' : {
 				if(!empty($data)) {
 					$regex = "/^[a-zA-Z\s]+$/";
@@ -72,12 +80,6 @@ function process() {
 					return "Name is required";
 				}
 
-				return "";
-			}
-			case 'why' : {
-				return "";
-			}
-			case 'leaving' : {
 				return "";
 			}
 			case 'name' : {
@@ -101,35 +103,70 @@ function process() {
 				return "";
 			}
 			case 'phone' : {
-				if ( !empty($data) && (
-					(!preg_match("/^[2-9]\d{2}-\d{3}-\d{4}$/", $data)) //or 
-					//(!preg_match("/^[0-9]{10}$/", $data) ) 
-					))  {
+				if ( (!empty($data)) && (
+					(!preg_match("/^[2-9]\d{2}-\d{3}-\d{4}$/", $data)) //xxx-xxx-xxxx
+					&& (!preg_match("/^[0-9]{10}$/", $data)) //xxxxxxxxxx
+				)
+				){
 					return "Invalid Phone Number. Please Re-enter";
+				}
+				return "";
+			}
+			case 'mailAdd' : {
+				if ( (!empty($data)) && (
+					(!preg_match("/^([\d]{1,5})(.*?)$/", $data)) //0-5 numbers then anything
+				)
+				){
+					return "Invalid mailing address. Please Re-enter";
+				}
+				return "";
+			}
+			case 'cityAdd' : {
+				if ( (!empty($data)) && (
+					(!preg_match("/^[a-zA-Z\s]+$/", $data)) //alphabetical string
+				)
+				){
+					return "Invalid city. Please Re-enter";
+				}
+				return "";
+			}
+			case 'stateAdd' : {
+				if ( (!empty($data)) && (
+					(!preg_match("/^[a-zA-Z]{2}$/", $data)) //2 letters
+				)
+				){
+					return "Invalid state. Please Re-enter";
+				}
+				return "";
+			}
+			case 'zipCode' : {
+				if ( (!empty($data)) && (
+					(!preg_match("/^[\d]{5}$/", $data)) //5 numbers
+				)
+				){
+					return "Invalid zip code. Please Re-enter";
+				}
+				return "";
+			}
+			case 'kids' : {
+				if ( !empty($data) ) {
+					if ( !preg_match("/\d+/",$data) || ( $data <0 ) )  {
+						return "Invalid quantity.  Please enter a nonnegative number.";
+					}
+				} else {
+					return "This is a required fieldd";
 				}
 
 				return "";
 			}
-			case 'mail_add' : {
-				
-			}
-			case 'city_add' : {
-				
-			}
-			case 'state_add' : {
-				
-			}
-			case 'zipcode' : {
-				
-			}
-			case 'housetype' : {
-				
-			}
-			case 'kids' : {
-				
-			}
 			case 'pets' : {
-				
+				if ( (!empty($data)) && (
+					(!preg_match("/^(([\d]{1,2})(\s)([a-zA-Z]*)(\s*))*$/", $data)) //2 numbers, whitespace, any number of letters
+				)
+				){
+					return "Invalid format. Please Re-enter";
+				}
+				return "";
 			}
 			case 'snv' : {
 				
