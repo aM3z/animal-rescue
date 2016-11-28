@@ -38,7 +38,7 @@
 
 			<!-- amount (different amounts for different animals) -->
 			<fieldset id="don-amount">
-				<legend>Amount</legend>
+				<legend>Amount (in USD)</legend>
 
 				<label class="vol-label" for="don-amount-dog">Dogs</label>
 				<input id="don-amount-dog" 
@@ -48,7 +48,7 @@
 					min="0" 
 					step="0.01" 
 					style="text-align: center;" 
-				required autofocus> USD
+				required autofocus>
 
 				<br><br>
 
@@ -60,7 +60,7 @@
 					min="0" 
 					step="0.01" 
 					style="text-align: center;" 
-				required> USD
+				required>
 
 				<br><br><hr>
 

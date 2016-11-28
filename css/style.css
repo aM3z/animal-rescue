@@ -524,7 +524,11 @@ input.submit_button {
 	background: #F3DE8A;
 	color: #272838;
 	font-weight: bolder;
-	box-shadow: 0;
+	-webkit-box-shadow: 0px 0px 10px 0px #d6d6d6;
+	-moz-box-shadow: 0px 0px 10px 0px #d6d6d6;
+	box-shadow: 0px 0px 10px 0px #d6d6d6;
+	border: 0;
+	border-radius: 5px;
 }
 
 fieldset.vol-contact > input, #vol-personal-details > input {
