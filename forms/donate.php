@@ -15,7 +15,7 @@
 			echo process();
 		}
 	?>
-	<?php print_r('here: ' . $hasErrors); ?>
+
 	<form id="donation-form" method="POST" action="">
 		<section class="button_float">
 			<input type="submit" name="submitButton" value="DONATE!" class="submit_button">
@@ -40,7 +40,7 @@
 				<input id="don-amount-dog" 
 					type="number" 
 					name="donAmountDog" 
-					value="<?php if(isset($_POST['donAmountDog'])) { echo $donAmountDog;} else { echo '0.00';} ?>" 
+					value="<?php if(empty($donAmountDog)) echo '0.00'; else echo $donAmountDog; ?>" 
 					min="0" 
 					step="0.01" 
 					style="text-align: center;" 
@@ -52,7 +52,7 @@
 				<input  id="don-amount-cat" 
 					type="number" 
 					name="donAmountCat" 
-					value="<?php if(isset($_POST['donAmountCat'])) { echo $donAmountCat;} else { echo '0.00';} ?>" 
+					value="<?php if(empty($donAmountCat)) echo '0.00'; else echo $donAmountCat; ?>" 
 					min="0" 
 					step="0.01" 
 					style="text-align: center;" 
@@ -63,11 +63,11 @@
 				<!-- payment period (weekly, monthly, quarterly etc.) -->
 				<label for="don-payment-period">Month to start </label>
 				<select id="don-payment-period" name="donPaymentPeriod">
-					<option value="weekly">weekly</option>
-					<option value="monthy">monthly</option>
-					<option value="quaterly">quaterly</option>
-					<option value="semiannually">semiannual</option>
-					<option value="annually">annual</option>
+					<option value="weekly" <?php if($donPaymentPeriod == 'weekly') echo 'selected'; ?>>weekly</option>
+					<option value="monthy" <?php if($donPaymentPeriod == 'monthy') echo 'selected'; ?>>monthly</option>
+					<option value="quarterly" <?php if($donPaymentPeriod == 'quarterly') echo 'selected'; ?>>quaterly</option>
+					<option value="semiannually" <?php if($donPaymentPeriod == 'semiannually') echo 'selected'; ?>>semiannual</option>
+					<option value="annually" <?php if($donPaymentPeriod == 'annually') echo 'selected'; ?>>annual</option>
 				</select>
 
 				<!-- month to start donation (should be stored as a date) -->
@@ -85,7 +85,9 @@
 						$period   	= new DatePeriod($start, $interval, $end);
 
 						foreach ($period as $dt) {
-    						echo "<option value=\"" . $dt->format("Y-m-d") . "\">" . $dt->format("M  Y") . "</option>\n";
+							$option_value = $dt->format("Y-m-d");
+							if($donStart == $option_value) $is_selected = 'selected'; else $is_selected = ""; 
+    						echo "<option value=\"" . $option_value . "\"" . $is_selected .">" . $dt->format("M  Y") . "</option>\n";
 						}
 					?>
 				</select>
@@ -119,18 +121,29 @@
 					required
 				>
 
-				<?php if(!empty($donEmailErr)) echo '<span class="form-error">' . $donEmailErr . '</span>';?>
+				<?php if(!empty($donEmailErr)) echo '<span class="warning">' . $donEmailErr . '</span>';?>
 
 				<br>
 
 				<label class="vol-label" for="don-address">Address</label>
 				<input type="text" 
 					id="don-address"
-					name="donAddress">
+					name="donAddress"
+					value="<?= $donAddress; ?>"
+				>
+
 				<br>
 
 				<label class="vol-label" for="don-phone">Phone</label>
-				<input type="telephone" id="don-phone" name="donPhone" placeholder="(253) 555-1234">
+				<input type="telephone" 
+					id="don-phone" 
+					name="donPhone" 
+					placeholder="(253) 555-1234"
+					value="<?= $donPhone; ?>"
+				>
+
+				<?php if(!empty($donPhoneErr)) echo '<span class="warning">' . $donPhoneErr . '</span>';?>
+
 
 			</fieldset>
 

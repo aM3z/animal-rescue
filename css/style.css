@@ -550,10 +550,21 @@ input#vol-current-date {
 	padding: 0;
 }
 
-// datepicker  styling
-table.ui-datepicker-calendar {
-	display: none;
+.warning {
+	background-color: #ffabab;
+	padding: 2px 5px;
 }
+
+.success {
+	background-color: #98f198;
+	padding: 2px 5px;
+}
+
+#don-contact-info > input {
+	width:	200px;
+	padding: 2px;
+}
+
 
 /**********************************
 ----------------------------------

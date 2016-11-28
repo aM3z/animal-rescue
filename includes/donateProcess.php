@@ -15,6 +15,13 @@
 	// declare and initialize vars
 	function process() {
 
+		global $donDate, $donAmountDog, $donAmountCat, $donPaymentPeriod, $donStart, 
+			$donName, $donEmail, $donAddress, $donPhone, $donGift;
+	
+		global 	$donAmountDogErr, $donAmountCatErr, $donStartErr, $donNameErr, 
+			$donEmailErr, $donAddressErr, $donPhoneErr;
+
+
 		// check if data posted
 		// clean & validate data
 		// print data
@@ -55,8 +62,6 @@
 
 			// $donAddress
 			$donAddress  		= cleanData($_POST['donAddress']); 
-			$donAddressErr 		= validate( $donAddress, 'donAddress');
-			if ( !empty($donAddressErr) ) $hasErrors = true; 
 
 			// $donPhone
 			$donPhone	  		= cleanData($_POST['donPhone']); 
@@ -71,16 +76,9 @@
 			}
 
 			if($hasErrors) {
-				return '<p class="text-warning">Please correct the error in the form an resubmit.</p>';
-				/*
-				if(!empty($donAmountDogErr)) $msg = $msg . $donAmountDogErr; 
-				if(!empty($donAmountCatErr)) $msg = $msg . $donAmountCatErr;
-				if(!empty($donStartErr)) $msg = $msg . $donStartErr;
-				if(!empty($donNameErr)) $msg = $msg . $donNameErr;
-				if(!empty($donEmailErr)) $msg = $msg . $donEmailErr;
-				if(!empty($donAddressErr)) $msg = $msg . $donAddressErr;
-				if(!empty($donPhoneErr)) $msg = $msg . $donPhoneErr;
-				 */
+
+				return '<p class="warning">Please correct the error in the form an resubmit.</p>';
+
 			} else {
 
 				$donation = array(
@@ -105,12 +103,22 @@
 					'isGift' => $donGift
 				);
 
+				// write to .json file
 				saveData($donation, '../data/donations.json');
 
-				// header("Location: google.com");
-				// exit();
+				// reset vars
+				$lastName = $donName;
 
-				return '<p class="text-success">Thank you very much for you donation, ' . $donName . '!</p>';
+				$hasErrors = false;
+
+				$donDate = $donAmountDog = $donAmountCat = $donPaymentPeriod = $donStart = 
+					$donName = $donEmail = $donAddress = $donPhone = $donGift = "";
+
+				$donAmountDogErr = $donAmountCatErr = $donStartErr = $donNameErr =
+					$donEmailErr = $donAddressErr = $donPhoneErr = "";
+
+				// return success msg
+				return '<p class="success">Thank you very much for your generous donation, ' . $lastName . '!</p>';
 			}
 		}
 
@@ -192,7 +200,6 @@
 				return "";
 			}
 
-			// donAddress 
 			// donPhone
 			case 'donPhone' : {
 
