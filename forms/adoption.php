@@ -9,7 +9,6 @@
 	<form id="adoption_form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 		<section class="button_float">
 			<input type="submit" value="ADOPT!" class="submit_button">
-			<br/><br/>
 			<input type="submit" value="CLEAR!" class="submit_button">
 		</section>
 		<section class="form_fields">

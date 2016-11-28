@@ -15,10 +15,6 @@
 			echo process();
 		}
 
-		if(isset($_POST['clearButton'])){ //check if form was submitted
-			clear();
-		}
-
 	?>
 
 	<form id="donation-form" method="POST" action="">

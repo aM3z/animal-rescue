@@ -107,7 +107,7 @@
 				saveData($donation, '../data/donations.json');
 
 				// reset vars
-				$lastName = $donName;
+				$lastUser = $donName;
 
 				$hasErrors = false;
 
@@ -118,31 +118,11 @@
 					$donEmailErr = $donAddressErr = $donPhoneErr = "";
 
 				// return success msg
-				return '<p class="success">Thank you very much for your generous donation, ' . $lastName . '!</p>';
+				return '<p class="success">Thank you very much for your generous donation, ' . $lastUser . '!</p>';
 			}
 		}
 
 	}
-
-	function clear() {
-	
-		global $hasErrors, $donDate, $donAmountDog, $donAmountCat, $donPaymentPeriod, $donStart, 
-			$donName, $donEmail, $donAddress, $donPhone, $donGift;
-	
-		global 	$donAmountDogErr, $donAmountCatErr, $donStartErr, $donNameErr, 
-			$donEmailErr, $donAddressErr, $donPhoneErr;
-
-		$hasErrors = false;
-
-		$donDate = $donAmountDog = $donAmountCat = $donPaymentPeriod = $donStart = 
-			$donName = $donEmail = $donAddress = $donPhone = $donGift = "";
-
-		$donAmountDogErr = $donAmountCatErr = $donStartErr = $donNameErr =
-			$donEmailErr = $donAddressErr = $donPhoneErr = "";
-
-
-	}	
-
 
 	// Simple data validation
 
