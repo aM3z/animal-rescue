@@ -20,7 +20,7 @@
 	<form id="adoption_form" method="POST" action="">
 		<section class="button_float">
 			<input type="submit" name="submitButton" value="SUBMIT!" class="submit_button">
-			<input type="submit" value="CLEAR!" class="submit_button">
+			<input type="reset" value="CLEAR!" class="submit_button">
 		</section>
 		<section class="form_fields">
 
