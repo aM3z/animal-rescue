@@ -14,13 +14,17 @@
 		if(isset($_POST['submitButton'])){ //check if form was submitted
 			echo process();
 		}
+
+		if(isset($_POST['clearButton'])){ //check if form was submitted
+			clear();
+		}
+
 	?>
 
 	<form id="donation-form" method="POST" action="">
 		<section class="button_float">
 			<input type="submit" name="submitButton" value="DONATE!" class="submit_button">
-			<br/><br/>
-			<input type="submit" name="clearButton" value="CLEAR!" class="submit_button">
+			<input type="reset" value="CLEAR!" class="submit_button">
 		</section>
 		<section class="form_fields">
 
@@ -135,7 +139,7 @@
 				<br>
 
 				<label class="vol-label" for="don-phone">Phone</label>
-				<input type="telephone" 
+				<input type="tel" 
 					id="don-phone" 
 					name="donPhone" 
 					placeholder="(253) 555-1234"

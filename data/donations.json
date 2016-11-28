@@ -22,3 +22,9 @@
 {"date":null,"amount":{"dogs":"0.04","cats":"0.01"},"paymentPeriod":"annually","starting":"2017-11-01","contactInfo":{"name":"asdf","email":"asddf@dasf.com","address":"","phone":""},"isGift":"no"}
 {"date":null,"amount":{"dogs":"0.04","cats":"0.01"},"paymentPeriod":"annually","starting":"2017-11-01","contactInfo":{"name":"asdf","email":"asddf@dasf.com","address":"","phone":""},"isGift":"no"}
 {"date":null,"amount":{"dogs":"0.16","cats":"0.05"},"paymentPeriod":"semiannually","starting":"2017-05-01","contactInfo":{"name":"Nora","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.16","cats":"0.05"},"paymentPeriod":"semiannually","starting":"2017-05-01","contactInfo":{"name":"Nora","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.16","cats":"0.05"},"paymentPeriod":"semiannually","starting":"2017-05-01","contactInfo":{"name":"Nora","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.16","cats":"0.05"},"paymentPeriod":"semiannually","starting":"2017-05-01","contactInfo":{"name":"Nora","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.16","cats":"0.05"},"paymentPeriod":"semiannually","starting":"2017-05-01","contactInfo":{"name":"Nora","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"0.16","cats":"0.05"},"paymentPeriod":"semiannually","starting":"2017-05-01","contactInfo":{"name":"Nora","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
+{"date":null,"amount":{"dogs":"19","cats":"200"},"paymentPeriod":"quarterly","starting":"2017-07-01","contactInfo":{"name":"Miguel","email":"miguel@miguel.com","address":"","phone":"2653536459"},"isGift":"no"}

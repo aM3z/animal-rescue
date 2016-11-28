@@ -113,6 +113,8 @@ a.adopt:active {
 	background-color:#68687F;
 	border:none;
 }
+
+
 /**********************************
 ----------------------------------
 	HEADER
@@ -508,18 +510,21 @@ footer.main-wrapper p {
 	FORMS
 ----------------------------------
 **********************************/
-section.button_float {
-	display:inline-block;
-	width:10%;
-	vertical-align:top;
-}
-section.button_float .submit_button {
-	position:fixed;
-}
+
 section.form_fields {
 	display:inline-block;
-	width:89%;
+	width:100%;
 	vertical-align:top;
+}
+
+input.submit_button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 49%;
+	background: #F3DE8A;
+	color: #272838;
+	font-weight: bolder;
+	box-shadow: 0;
 }
 
 fieldset.vol-contact > input, #vol-personal-details > input {
@@ -565,6 +570,9 @@ input#vol-current-date {
 	padding: 2px;
 }
 
+.button_float {
+	margin-bottom: 20px;
+}
 
 /**********************************
 ----------------------------------
@@ -597,6 +605,7 @@ input#vol-current-date {
 	footer.main-wrapper p {
 		width:49%;
 	}
+
 }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	main > article {
@@ -628,6 +637,22 @@ input#vol-current-date {
 	}
 	aside.details {
 		width:24.34%;
+	}
+	section.button_float {
+		display:inline-block;
+		width:10%;
+		vertical-align:top;
+	}
+	section.button_float  {
+		position:fixed;
+	}
+	section.form_fields {
+	    width: 89%;
+	    margin-left: 10%;
+	}
+	input.submit_button {
+		width: 86px;
+		margin-bottom: 15px;
 	}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }

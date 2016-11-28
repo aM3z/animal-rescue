@@ -124,6 +124,26 @@
 
 	}
 
+	function clear() {
+	
+		global $hasErrors, $donDate, $donAmountDog, $donAmountCat, $donPaymentPeriod, $donStart, 
+			$donName, $donEmail, $donAddress, $donPhone, $donGift;
+	
+		global 	$donAmountDogErr, $donAmountCatErr, $donStartErr, $donNameErr, 
+			$donEmailErr, $donAddressErr, $donPhoneErr;
+
+		$hasErrors = false;
+
+		$donDate = $donAmountDog = $donAmountCat = $donPaymentPeriod = $donStart = 
+			$donName = $donEmail = $donAddress = $donPhone = $donGift = "";
+
+		$donAmountDogErr = $donAmountCatErr = $donStartErr = $donNameErr =
+			$donEmailErr = $donAddressErr = $donPhoneErr = "";
+
+
+	}	
+
+
 	// Simple data validation
 
 	function validate( $data, $field ) {
