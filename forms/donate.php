@@ -30,7 +30,6 @@
 				<input 
 					id="don-date" 
 					type="date" 
-					name="donDate" 
 					value="<?php echo date('Y-m-d'); ?>" 
 					disabled
 				>

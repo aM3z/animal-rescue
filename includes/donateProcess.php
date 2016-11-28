@@ -28,7 +28,7 @@
 
 		if ( $_SERVER['REQUEST_METHOD'] == 'POST' && $_POST ) {
 			// $donDate
-			$donDate   			= $_POST['donDate']; 
+			$donDate   			= date('Y-m-d');
 
 			// $donAmountDog
 			$donAmountDog   	= cleanData($_POST['donAmountDog']); 
@@ -77,7 +77,7 @@
 
 			if($hasErrors) {
 
-				return '<p class="warning">Please correct the error in the form an resubmit.</p>';
+				return '<p class="warning">Please correct the error(s) in the form and resubmit.</p>';
 
 			} else {
 

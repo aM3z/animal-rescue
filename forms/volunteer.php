@@ -1,7 +1,7 @@
 <?php 
 	require '../config.php';
 	require '../includes/header.php'; 
-    require '../includes/donateProcess.php';
+    require '../includes/volunteerProcess.php';
 
 ?>
 
@@ -19,7 +19,7 @@
 
 	<form id="adoption_form" method="POST" action="">
 		<section class="button_float">
-			<input type="submit" value="ADOPT!" class="submit_button">
+			<input type="submit" name="submitButton" value="SUBMIT!" class="submit_button">
 			<input type="submit" value="CLEAR!" class="submit_button">
 		</section>
 		<section class="form_fields">
@@ -30,8 +30,7 @@
 				<input 
 					type="date" 
 					id="vol-current-date" 
-					name="volDate" 
-					value="<?php print date('Y-m-d'); ?>"
+					value="<?php echo date('Y-m-d'); ?>"
 					disabled
 				>
 			</fieldset>
@@ -48,8 +47,10 @@
 					type="text" 
 					id="vol-name" 
 					name="volName" 
-					placeholder="Alan Turing" 
+					value="<?= $volName; ?>"
+					placeholder="Alan Turing"
 					autofocus
+					required
 				>
 
 				<br>
@@ -59,8 +60,11 @@
 					type="email" 
 					id="vol-email"
 					name="volEmail"
+					value="<?= $volEmail; ?>"
 					placeholder="alan.turing@email.com"
+					required
 				>
+				<?php if(!empty($volEmailErr)) echo '<span class="warning">' . $volEmailErr . '</span>';?>
 
 				<br>
 
@@ -68,7 +72,10 @@
 				<input 
 					type="text" 
 					id="vol-address" 
-					name="volAddress">
+					name="volAddress"
+					value="<?= $volAddress; ?>"
+				>
+
 				<br>
 
 				<label class="vol-label" for="vol-phone">Phone</label>
@@ -76,8 +83,11 @@
 					type="tel" 
 					id="vol-phone" 
 					name="volPhone" 
+					value="<?= $volPhone; ?>"
 					placeholder="(253) 555-1234"
 				>
+
+				<?php if(!empty($volPhoneErr)) echo '<span class="warning">' . $volPhoneErr . '</span>';?>
 
 			</fieldset>
 
@@ -91,8 +101,12 @@
 				<input 
 					type="date" 
 					id="vol-dob" 
-					name="volDOB" 
+					name="volDOB"
+					value="<?= $volDOB; ?>"
+					required
 				>
+				
+				<?php if(!empty($volDOBErr)) echo '<span class="warning">' . $volDOBErr . '</span>';?>
 
 				<br>
 
@@ -116,8 +130,9 @@
 					type="text" 
 					id="vol-emer-name" 
 					name="volEmerName" 
+					value="<?= $volEmerName; ?>"
 					placeholder="Alan Turing" 
-					autofocus
+					required
 				>
 
 				<br>
@@ -126,9 +141,13 @@
 				<input 
 					type="email" 
 					id="vol-emer-email" 
-					name="volEmerEmail" 
+					name="volEmerEmail"
+					value="<?= $volEmerEmail; ?>" 
 					placeholder="alan.turing@email.com"
+					required
 				>
+
+				<?php if(!empty($volEmerEmailErr)) echo '<span class="warning">' . $volEmerEmailErr . '</span>';?>
 
 				<br>
 
@@ -137,6 +156,7 @@
 					type="text" 
 					id="vol-emer-address" 
 					name="volEmerAddress"
+					value="<?= $volEmerAddress; ?>"
 				>
 
 				<br>
@@ -145,9 +165,12 @@
 				<input 
 					type="telephone" 
 					id="vol-emer-phone" 
-					name="volEmerPhone" 
+					name="volEmerPhone"
+					value="<?= $volEmerPhone; ?>" 
 					placeholder="(253) 555-1234"
 				>
+
+				<?php if(!empty($volEmerPhoneErr)) echo '<span class="warning">' . $volEmerPhoneErr . '</span>';?>
 
 			</fieldset>
 
@@ -167,7 +190,7 @@
 
 				?>
 
-				<fieldset class="vol-avail" id="vol-avail-<?php echo $short_lower; ?>">
+				<fieldset class="vol-avail <?php if(!empty(${'volAvail' . $short . 'PeriodErr'})) echo 'warning'?>" id="vol-avail-<?php echo $short_lower; ?>">
 				<legend><?php echo $day; ?></legend>
 
 					<label class="vol-avail-label" for="vol-avail-<?php echo $short_lower; ?>-start">Start</label>
@@ -175,9 +198,9 @@
 						type="time" 
 						id="vol-avail-<?php echo $short_lower; ?>-start" 
 						name="volAvail<?php echo $short; ?>Start" 
-						min="07:00:00" 
-						max="00:00:00" 
-						value="07:00:00"
+						min="07:00" 
+						max="24:00" 
+						value="<?php if(empty(${'volAvail' . $short . 'Start'})) echo '07:00'; else echo ${'volAvail' . $short . 'Start'}; ?>"
 					>
 
 					<label class="vol-avail-label" for="vol-avail-<?php echo $short_lower; ?>-end">End</label>
@@ -185,11 +208,11 @@
 						type="time" 
 						id="vol-avail-<?php echo $short_lower; ?>-end" 
 						name="volAvail<?php echo $short; ?>End" 
-						min="07:00:00" 
-						max="00:00:00" 
-						value="00:00:00"
-					>
+						min="07:00" 
+						max="24:00" 
+						value="<?php if(empty(${'volAvail' . $short . 'End'})) echo '15:00'; else echo ${'volAvail' . $short . 'End'}; ?>"
 
+					>
 				</fieldset>
 
 				<?php endforeach; ?>
@@ -207,10 +230,12 @@
 				<input 
 					type="number" 
 					id="vol-max-hours" 
-					name="volMaxHours" 
+					name="volMaxHours"
+					value="<?= $volMaxHours; ?>"
 					placeholder="10" 
 					min="1" 
 					max="744"
+					required
 				>
 
 				<label for="vol-max-hours-period" > hours per </label>
@@ -219,6 +244,7 @@
 					id="vol-max-hours-period" 
 					name="volMaxHoursPeriod" 
 					value="month"
+					checked
 				> month or 
 				<input 
 					type="radio" 
@@ -237,7 +263,8 @@
 					name="volExperience" 
 					cols="50" 
 					rows="10"
-				></textarea>
+					required
+				><?= $volExperience; ?></textarea>
 
 				<br>
 
@@ -249,7 +276,8 @@
 					name="volPref" 
 					cols="50" 
 					rows="10"
-				></textarea>
+					required
+				><?= $volPref; ?></textarea>
 
 			</fieldset>
 
@@ -261,7 +289,9 @@
 			<input 
 				type="checkbox"
 				name="volAgrees"
-				value="true"
+				value="yes"
+				required
+				<?php if($volAgrees == 'yes') echo 'checked'; ?>
 			> I agree.</input>
 
 			<br><br><hr>
