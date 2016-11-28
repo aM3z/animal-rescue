@@ -2,50 +2,82 @@
 
 	require '../includes/cleanData.php';
 	require '../includes/saveData.php';
-
-	$hasErrors = false;
-
-
-	$cleanValue = "";
 	
-	//array to hold variables, key = name value = value
-	$vars[] = array();
 	
+	$test = "";
+
+	$hasErrors = false;	
+	$vars = [
+		"petName" => "",
+		"why" => "",
+		"leaving" => "",
+	]; 	//array to hold variables, key = name value = value
+	
+	
+	$varsErrors[] = $vars;
+	
+function process() {
+	global $hasErrors;
+	global $vars;
+	global $varsErrors;
+	
+	
+	global $test;
+	
+
 	if ( $_SERVER['REQUEST_METHOD'] == 'POST' && $_POST ) {
 
 		foreach ($_POST as $key => $value) {
+			$cleanValue = "";
 			$cleanValue = cleanData($value);
-			$vars[$key] = $cleanValue;			
+			$vars[$key] = $cleanValue;	
+			$varsErrors[$key] = 0;
+			//echo "$key <br/>";
 		}
 		
 		foreach ($vars as $key => $val) {
-			echo "$key: $val <br>"; //reference, delete later
-			//validate($vars, $val, $key);
+			$tempError = "";
+			$tempError = validate($val, $key);
+			echo "test: $tempError; <br>";	//validating test delete later
+			if(!empty($tempError)) {
+				$hasErrors = true;
+				$varsErrors[$key] = $tempError;
+			}
+		}	
+		echo "test2: $tempError; <br>";		//validating test delete later
+		if($hasErrors) {
+			return '<p class="warning">Please correct the error(s) in the form and resubmit.</p>';
 		}		
 		
    } else {
 	}
-   
+}
 	
 	//validate data
-	function validate($arr, $data, $field) {
+	function validate($data, $field) {
 		switch($field) {
-			case '0' : {
-				echo "";
+			case 'submitButton' : {
+				return "";
 			}
-			case 'pet_name' : {
-				//echo "{$arr['pet_name']} <br>";
+			case 'petName' : {
+				if(!empty($data)) {
+					$regex = "/^[a-zA-Z\s]+$/";
+					if ( !preg_match($regex, $data) ) {
+						return "Please enter name using only letters and spaces";
+					}
+				} else {
+					return "Name is required";
+				}
+
+				return "";
 			}
 			case 'why' : {
-				
+				return "";
 			}
 			case 'leaving' : {
-				
+				return "";
 			}
-			case 'first_name' : {
-				
-			}
-			case 'last_name' : {
+			case 'name' : {
 				
 			}
 			case 'email_add' : {
