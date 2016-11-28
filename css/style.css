@@ -574,6 +574,12 @@ input#vol-current-date {
 	padding: 2px;
 }
 
+input#don-date {
+    background: #fff;
+	color: #000;
+    border: 0;
+}
+
 .button_float {
 	margin-bottom: 20px;
 }

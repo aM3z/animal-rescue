@@ -31,7 +31,13 @@
 			<!-- current date -->
 			<fieldset id="don-date">
 				<legend>Date</legend>
-				<input id="don-date" type="date" name="donDate" value="<?php echo date('Y-m-d'); ?>" disabled>
+				<input 
+					id="don-date" 
+					type="date" 
+					name="donDate" 
+					value="<?php echo date('Y-m-d'); ?>" 
+					disabled
+				>
 			</fieldset>
 
 			<br>
@@ -41,26 +47,31 @@
 				<legend>Amount (in USD)</legend>
 
 				<label class="vol-label" for="don-amount-dog">Dogs</label>
-				<input id="don-amount-dog" 
+				<input 
+					id="don-amount-dog" 
 					type="number" 
 					name="donAmountDog" 
 					value="<?php if(empty($donAmountDog)) echo '0.00'; else echo $donAmountDog; ?>" 
 					min="0" 
 					step="0.01" 
 					style="text-align: center;" 
-				required autofocus>
+					required 
+					autofocus
+				>
 
 				<br><br>
 
 				<label class="vol-label" for="don-amount-cat">Cats</label>
-				<input  id="don-amount-cat" 
+				<input  
+					id="don-amount-cat" 
 					type="number" 
 					name="donAmountCat" 
 					value="<?php if(empty($donAmountCat)) echo '0.00'; else echo $donAmountCat; ?>" 
 					min="0" 
 					step="0.01" 
 					style="text-align: center;" 
-				required>
+					required
+				>
 
 				<br><br><hr>
 
@@ -106,7 +117,8 @@
 				<legend>Contact Information</legend>
 
 				<label class="vol-label" for="don-name">Name</label>
-				<input type="text" 
+				<input	
+					type="text" 
 					id="don-name" 
 					name="donName" 
 					placeholder="Alan Turing"
@@ -117,7 +129,8 @@
 				<br>
 
 				<label class="vol-label" for="don-email">Email</label>
-				<input type="email" 
+				<input 
+					type="email" 
 					id="don-email" 
 					name="donEmail" 
 					placeholder="alan.turing@email.com"
@@ -130,7 +143,8 @@
 				<br>
 
 				<label class="vol-label" for="don-address">Address</label>
-				<input type="text" 
+				<input 
+					type="text" 
 					id="don-address"
 					name="donAddress"
 					value="<?= $donAddress; ?>"
@@ -139,7 +153,8 @@
 				<br>
 
 				<label class="vol-label" for="don-phone">Phone</label>
-				<input type="tel" 
+				<input 
+					type="tel" 
 					id="don-phone" 
 					name="donPhone" 
 					placeholder="(253) 555-1234"
@@ -154,11 +169,13 @@
 			<br>
 
 			<!-- whether or not this donation is a gift -->
-			<input id="don-gift"
+			<input 
+				id="don-gift"
 				type="checkbox" 
 				name="donGift" 
 				value="yes"
-				<?php if(isset($_POST['donGift'])) print 'checked'; ?>> Yes, this donation is a gift!
+				<?php if(!empty($donGift)) print 'checked'; ?>
+			> Yes, this donation is a gift!
 
 			<br><br><hr>
 
