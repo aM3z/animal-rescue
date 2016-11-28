@@ -542,8 +542,9 @@ label.vol-label {
 }
 
 fieldset.vol-avail {
-	width: 75px;
-	display: inline-block;
+	width: 90px;
+	display: block;
+	margin: 0 auto;
 }
 
 label.vol-avail-label {
@@ -594,6 +595,11 @@ input#don-date, input#vol-current-date {
 	margin-bottom: 20px;
 }
 
+fieldset.vol-avail > input {
+	border: 0;
+	border-bottom: 1px solid #888;
+}
+
 /**********************************
 ----------------------------------
 	COMPATABILITY
@@ -616,6 +622,11 @@ input#don-date, input#vol-current-date {
 		width:100%;
 		margin: 0 auto;
 	}
+	fieldset.vol-avail {
+		width: 150px;
+		display: inline-block;
+	}
+
 }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 
@@ -673,9 +684,6 @@ input#don-date, input#vol-current-date {
 	input.submit_button {
 		width: 86px;
 		margin-bottom: 15px;
-	}
-	fieldset.vol-avail {
-		width: 150px;
 	}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
