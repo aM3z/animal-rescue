@@ -16,7 +16,7 @@
 	<form id="adoption_form" method="POST" action=""> <!--<?php //echo $_SERVER['PHP_SELF']; ?>-->
 		<section class="button_float">
 			<input type="submit" value="ADOPT!" class="submit_button" name="submitButton">
-			<input type="submit" value="CLEAR!" class="submit_button" name="clearButton">
+			<input type="reset" value="CLEAR!" class="submit_button" name="clearButton">
 		</section>
 		<section class="form_fields">
 			<fieldset id="adoptee">
@@ -34,6 +34,8 @@
 						required
 					>
 				<br/><br/>
+				
+				<!--why adopt pet?-->
 				<label for="why" class="vol-label">Why do you think you are the perfect family for this pet?</label>
 					<textarea 
 						type="text" 
@@ -46,6 +48,8 @@
 					><?= $vars['why']; ?></textarea>
 										
 				<br/><br/>
+				
+				<!--why give up pet-->
 				<label for="leaving" class="vol-label">What would lead you to giving up this pet?</label>
 				<textarea 
 						type="text" 
@@ -58,7 +62,7 @@
 				><?= $vars['leaving']; ?></textarea>
 
 			</fieldset>	
-		<!--
+		
 			<fieldset id="about you">
 				<legend>about you</legend>
 				
@@ -70,31 +74,39 @@
 							type="text" 
 							id="fname" 
 							name="name" 
-							value=<?= $vars['name']; ?>
+							placeholder="First Last"
+							value="<?= $vars['name']; ?>"
+							pattern="^[a-zA-Z\s]+$"
 							required
 						>
 
 					<br/><br/>
 					<label for="emailaddr" class="vol-label">Email</label>
 						<input 
-							type="email" 
+							type="text" 
 							id="emailaddr" 
-							name="emailAdd" 
-							value=<?= $vars['emailAddr']; ?> 
-							required
+							name="email" 
+							value="<?= $vars['email']; ?>"
+							placeholder="email@host.com"
 						>
+						
+						<?php if(!empty($varsErrors['email'])) echo '<span class="warning">' . $varsErrors['email'] . '</span>';?>
+						
 					<br/><br/>
 					<label for="phonenum" class="vol-label">Phone</label>
 						<input 
 							type="phone" 
 							id="phonenum" 
-							name="PhoneNum" 
-							value=<?= $vars['phoneNum']; ?> 
+							name="phone" 
+							value="<?= $vars['phone']; ?>"
+							placeholder="(253) 555-1234"
 							required
 						>
+						
+					<?php if(!empty($varsErrors['phone'])) echo '<span class="warning">' . $varsErrors['phone'] . '</span>';?>
 
 				</fieldset>
-				
+				<!--
 				<fieldset id="your home">
 					<legend>Your home</legend>
 					<label for="mailaddr" class="vol-label">Address</label>

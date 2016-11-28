@@ -11,6 +11,9 @@
 		"petName" => "",
 		"why" => "",
 		"leaving" => "",
+		"name" => "",
+		"email" => "",
+		"phone" => ""
 	]; 	//array to hold variables, key = name value = value
 	
 	
@@ -31,14 +34,14 @@ function process() {
 			$cleanValue = "";
 			$cleanValue = cleanData($value);
 			$vars[$key] = $cleanValue;	
-			$varsErrors[$key] = 0;
+			$varsErrors[$key] = "";
 			//echo "$key <br/>";
 		}
 		
 		foreach ($vars as $key => $val) {
 			$tempError = "";
 			$tempError = validate($val, $key);
-			echo "test: $tempError; <br>";	//validating test delete later
+			echo "test $key : $tempError; <br>";	//validating test delete later
 			if(!empty($tempError)) {
 				$hasErrors = true;
 				$varsErrors[$key] = $tempError;
@@ -78,13 +81,34 @@ function process() {
 				return "";
 			}
 			case 'name' : {
-				
+				if(!empty($data)) {
+					$regex = "/^[a-zA-Z\s]+$/";
+					if ( !preg_match($regex, $data) ) {
+						return "Please enter name using only letters and spaces";
+					}
+				} else {
+					return "Name is required";
+				}
+				return "";
 			}
-			case 'email_add' : {
-				
+			case 'email' : {
+				if ( !empty($data) ) {
+					if ( !filter_var($data, FILTER_VALIDATE_EMAIL) ) {
+						return "Invalid Email Address.  Please Re-enter";
+					}
+				} 
+
+				return "";
 			}
-			case 'phone_num' : {
-				
+			case 'phone' : {
+				if ( !empty($data) && (
+					(!preg_match("/^[2-9]\d{2}-\d{3}-\d{4}$/", $data)) //or 
+					//(!preg_match("/^[0-9]{10}$/", $data) ) 
+					))  {
+					return "Invalid Phone Number. Please Re-enter";
+				}
+
+				return "";
 			}
 			case 'mail_add' : {
 				
