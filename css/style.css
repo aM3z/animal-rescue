@@ -674,12 +674,8 @@ fieldset.vol-avail > input {
 		width:10%;
 		vertical-align:top;
 	}
-	section.button_float  {
-		position:fixed;
-	}
 	section.form_fields {
 	    width: 89%;
-	    margin-left: 10%;
 	}
 	input.submit_button {
 		width: 86px;

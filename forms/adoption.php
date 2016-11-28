@@ -1,7 +1,7 @@
 <?php 
 	require('./../config.php');
 	require('./../includes/header.php'); 
-	require('./../includes/process.php');
+	require('./../includes/adoptionProcess.php');
 ?>
 
 <main role="main" class="clear main-wrapper">
@@ -83,7 +83,7 @@
 						
 						<input type="radio" id="snv" name="snv" value="yes"> <label for="single" class="label"> no</label>
 						
-						<input type="radio" id="snv" name="snv" value="yes"> <label for="single" class="label"> n/a</label>						
+						<input type="radio" id="snv" name="snv" value="yes" checked> <label for="single" class="label"> n/a</label>						
 					
 				</fieldset>
 			</fieldset>
