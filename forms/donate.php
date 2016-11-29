@@ -19,8 +19,10 @@
 
 	<form id="donation-form" method="POST" action="">
 		<section class="button_float">
-			<input type="submit" name="submitButton" value="DONATE!" class="submit_button">
-			<input type="reset" value="CLEAR!" class="submit_button">
+			<article>
+				<input type="submit" name="submitButton" value="DONATE!" class="submit_button">
+				<input type="reset" value="CLEAR!" class="submit_button">
+			</article>
 		</section>
 		<section class="form_fields">
 
@@ -67,6 +69,8 @@
 					style="text-align: center;" 
 					required
 				>
+				<br/><br/>
+				<?php if(!empty($donAmountCat)) echo '<span class="warning">' . $donAmountCatErr . '</span>';?>
 
 				<br><br><hr>
 
@@ -111,7 +115,7 @@
 
 				<legend>Contact Information</legend>
 
-				<label class="vol-label" for="don-name">Name</label>
+				<label class="vol-label" for="don-name"><req>Name<req></label>
 				<input	
 					type="text" 
 					id="don-name" 
@@ -121,9 +125,9 @@
 					pattern="^[a-zA-Z\s]+$"
 					required
 				>
-				<br>
+				<br/><br/>
 
-				<label class="vol-label" for="don-email">Email</label>
+				<label class="vol-label" for="don-email"><req>Email<req></label>
 				<input 
 					type="email" 
 					id="don-email" 
@@ -135,7 +139,7 @@
 
 				<?php if(!empty($donEmailErr)) echo '<span class="warning">' . $donEmailErr . '</span>';?>
 
-				<br>
+				<br/><br/>
 
 				<label class="vol-label" for="don-address">Address</label>
 				<input 
@@ -145,14 +149,14 @@
 					value="<?= $donAddress; ?>"
 				>
 
-				<br>
+				<br/><br/>
 
 				<label class="vol-label" for="don-phone">Phone</label>
 				<input 
 					type="tel" 
 					id="don-phone" 
 					name="donPhone" 
-					placeholder="(253) 555-1234"
+					placeholder="253-555-1234"
 					value="<?= $donPhone; ?>"
 				>
 

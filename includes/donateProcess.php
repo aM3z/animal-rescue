@@ -3,7 +3,6 @@
 	require '../includes/cleanData.php';
 	require '../includes/saveData.php';
 
-	$hasErrors = false;
 
 	$donDate = $donAmountDog = $donAmountCat = $donPaymentPeriod = $donStart = 
 		$donName = $donEmail = $donAddress = $donPhone = $donGift = "";
@@ -20,6 +19,9 @@
 	
 		global 	$donAmountDogErr, $donAmountCatErr, $donStartErr, $donNameErr, 
 			$donEmailErr, $donAddressErr, $donPhoneErr;
+			
+			$hasErrors = false;
+
 
 
 		// check if data posted
@@ -127,12 +129,15 @@
 	// Simple data validation
 
 	function validate( $data, $field ) {
-
+		$donTotalAmount = 0;
+		
+		global $donTotalAmount;
 
 		switch ( $field ) {
 
 			// donAmountDog 
 			case 'donAmountDog' :  {
+				$donTotalAmount = $data;
 				if ( !empty($data) ) {
 					if ( !preg_match("/\d+/",$data) || ( $data <0 ) )  {
 						return "Invalid quantity.  Please enter a nonnegative number.";
@@ -146,9 +151,13 @@
 
 			// donAmountCat
 			case 'donAmountCat' :  {
+				$donTotalAmount = $donTotalAmount + $data;
 				if ( !empty($data) ) {
 					if ( !preg_match("/\d+/",$data) || ( $data <0 ) )  {
 						return "Invalid quantity.  Please enter a nonnegative number.";
+					}
+					if ($donTotalAmount == 0){
+						return "please consider donating something";
 					}
 				} else {
 					return "Quantity is required for cat donation.";
@@ -165,7 +174,7 @@
 					// get associative array with detailed info about given date
 					$dateChk = date_parse($data);
 					// check the validity of the date formed by the arguments
-					if ( !checkdate($dateChk[month], $dateChk[day], $dateChk[year]) ) {
+					if ( !checkdate($dateChk['month'], $dateChk['day'], $dateChk['year']) ) {
 						return "Invalid Order Date.  Please Re-enter";
 					}
 				} else { 

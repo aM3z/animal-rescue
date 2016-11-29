@@ -33,3 +33,11 @@
 {"date":null,"amount":{"dogs":"5","cats":"10"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"Miguel","email":"miguel@miguel.com","address":"","phone":""},"isGift":"yes"}
 {"date":null,"amount":{"dogs":"0.11","cats":"0.05"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"sadf","email":"asdf@adsf.com","address":"","phone":""},"isGift":"no"}
 {"date":"2016-11-27","amount":{"dogs":"0.22","cats":"0.03"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"adsf","email":"asddf@dasf.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.00","cats":"1000.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"alan turing","email":"alan.turing@enigma.com","address":"","phone":""},"isGift":"no"}
+{"date":"2016-11-29","amount":{"dogs":"0.00","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"alan turing","email":"al@yo.com","address":"bleh","phone":"2222222222"},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.00","cats":"10"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"alan turing","email":"al@yo.com","address":"","phone":""},"isGift":"no"}
+{"date":"2016-11-29","amount":{"dogs":"0.00","cats":"10"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"alan turing","email":"al@yo.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.00","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"test","email":"yo@gmail.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.04","cats":"0.01"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"mickey","email":"disney@test.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.04","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"mickey","email":"disney@test.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.04","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"mickey","email":"disney@test.com","address":"","phone":""},"isGift":"yes"}
