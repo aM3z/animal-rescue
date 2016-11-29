@@ -25,16 +25,15 @@
 		<section class="form_fields">
 
 			<!-- current date -->
-			<fieldset id="vol-date">
-				<legend>Date</legend>
+			<!--<fieldset id="vol-date">
+				<legend>Date</legend>-->
 				<input 
-					type="date" 
+					type="hidden" 
 					id="vol-current-date" 
 					value="<?php echo date('Y-m-d'); ?>"
-					disabled
 				>
-			</fieldset>
-			<br>
+			<!--</fieldset>-->
+			<br> 
 
 
 			<!-- contact information (name, email, address, phone) -->
@@ -268,9 +267,46 @@
 
 				<br><br>
 
-				<!-- assignment preferences (see example for ideas) -->
+				<!-- assignment preferences-->
 				<label for="vol-pref">Assignment Preferences</label>
-				<br>
+				<br><br>
+				
+				<!--event work-->
+				<label for="vol-pref-events" class="vol-label">Event Work</label>
+				<input
+					type="range"
+					name="volEvents"
+					min="0"
+					max="10"
+					incremint="1"
+					value="<?=$volEvents;?>"
+				>
+				<br/><br/>
+				
+				<!--office work-->
+				<label for="vol-pref-office" class="vol-label">Office Work</label>
+				<input
+					type="range"
+					name="volOffice"
+					min="0"
+					max="10"
+					incremint="1"
+					value="<?=$volOffice;?>"
+				>
+				<br/><br/>
+				
+				<!--animal work-->
+				<label for="vol-pref-events" class="vol-label">Animal Transport/ Cleanup</label>
+				<input
+					type="range"
+					name="volCleanup"
+					min="0"
+					max="10"
+					incremint="1"
+					value="<?=$volCleanup;?>"
+				>
+				<br/><br/>
+				<label for="vol-pref">List specific preferences here</label>
 				<textarea 
 					id="vol-pref" 
 					name="volPref" 

@@ -11,7 +11,7 @@
 		$volAvailWedStart = $volAvailWedEnd = $volAvailThuStart = $volAvailThuEnd =
 		$volAvailFriStart = $volAvailFriEnd = $volAvailSatStart = $volAvailSatEnd =
 		$volAvailSunStart = $volAvailSunEnd = $volMaxHours = $volMaxHoursPeriod =
-		$volExperience = $volPref = $volAgrees = "";
+		$volExperience = $volPref = $volAgrees = $volEvents = $volCleanup = $volOffice = "";
 
 	$volEmailErr = $volPhoneErr = $volDOBErr = $volEmerEmailErr = $volEmerPhoneErr = 
 		$volAvailMonPeriodErr = $volAvailTuePeriodErr = $volAvailWedPeriodErr = 
@@ -27,7 +27,7 @@
 			$volAvailWedStart, $volAvailWedEnd, $volAvailThuStart, $volAvailThuEnd,
 			$volAvailFriStart, $volAvailFriEnd, $volAvailSatStart, $volAvailSatEnd,
 			$volAvailSunStart, $volAvailSunEnd, $volMaxHours, $volMaxHoursPeriod,
-			$volExperience, $volPref, $volAgrees;
+			$volExperience, $volPref, $volAgrees, $volEvents, $volCleanup, $volOffice;
 
 		global $volEmailErr, $volPhoneErr, $volDOBErr, $volEmerEmailErr, $volEmerPhoneErr, 
 			$volAvailMonPeriodErr, $volAvailTuePeriodErr, $volAvailWedPeriodErr, 
@@ -151,6 +151,11 @@
 
 			// $volPref
 			$volPref = cleanData($_POST['volPref']);
+			
+			// $volEvents, volCleanup, volOffice
+			$volEvents = $_POST['volEvents'];
+			$volOffice = $_POST['volOffice'];
+			$volCleanup = $_POST['volCleanup'];
 
 			// $volAgrees
 			if(isset($_POST['volAgrees'])) {
@@ -194,6 +199,9 @@
 					'maxHoursPeriod' => $volMaxHoursPeriod,
 					'experience' => $volExperience,
 					'preferences' => $volPref,
+					'preferences: events' => $volEvents,
+					'preference: office' => $volOffice,
+					'preference: cleanup' => $volCleanup,
 					'agreement' => $volAgrees
 				);
 

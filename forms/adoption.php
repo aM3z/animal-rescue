@@ -221,15 +221,14 @@
 			<fieldset id="extra">
 				<legend>extra</legend>
 				
-				<label for="today_date" class="vol-label">Today's Date</label>
+				<!--<label for="today_date" class="vol-label">Today's Date</label>-->
 					<input 
-					type="date" 
+					type="hidden" 
 					id="vol-current-date" 
 					value="<?php echo date('Y-m-d'); ?>"
-					disabled
 					>
-				<br><br>
-				<label for="followup" class="long-label">when would you like a follow up appointment?</label><br>
+				<label for="followup" class="long-label">when would you like a follow up appointment?</label>
+				<br/><br/>
 				<label for="apt_date" class="vol-label">Day</label>
 					<input 
 						type="date" 
