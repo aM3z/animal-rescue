@@ -168,11 +168,31 @@ function process() {
 				}
 				return "";
 			}
-			case 'snv' : {
-				
+
+			case 'aptDate' : {
+				$cDate = date('d-m-Y H:i:s');
+				if ( (!empty($data)) && (
+					(strtotime($data) < strtotime($cDate))
+				)
+				){
+					return "Invalid date. Please schedule after today";
+				}
+				return "";
 			}
-			case 'date' : {
-				
+			
+			case 'aptTime' : {
+				//$openTime = date(mktime(1, 8, 00, 1, 1, 2000);
+				$openTime = date("H:i", mktime(8, 0));
+				$closeTime = date("H:i", mktime(20, 0));
+				echo "TIME: $openTime || $closeTime<br>";
+				if ( (!empty($data)) && (
+					(strtotime($data) < strtotime($openTime))
+					|| (strtotime($data) > strtotime($closeTime))
+				)
+				){
+					return "Invalid time. We are open between 8am and 8pm";
+				}
+				return "";
 			}
 		}
 	}

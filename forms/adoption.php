@@ -223,11 +223,10 @@
 				
 				<label for="today_date" class="vol-label">Today's Date</label>
 					<input 
-						type="date" 
-						id="today_date" 
-						name="todayDate" 
-						value="<?= $vars['todayDate']; ?>"
-						required
+					type="date" 
+					id="vol-current-date" 
+					value="<?php echo date('Y-m-d'); ?>"
+					disabled
 					>
 				<br><br>
 				<label for="followup" class="long-label">when would you like a follow up appointment?</label><br>
@@ -246,7 +245,9 @@
 						name="aptTime" 
 						value="<?= $vars['aptTime']; ?>" 
 						required
-					>	
+					>
+
+				<?php if(!empty($varsErrors['aptTime'])) echo '<span class="warning">' . $varsErrors['aptTime'] . '</span>';?>					
 
 			</fieldset>
 		</section>
