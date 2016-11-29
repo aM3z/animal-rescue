@@ -517,6 +517,11 @@ section.form_fields {
 	vertical-align:top;
 }
 
+section.button_float article {
+	position:fixed;
+	width:inherit;
+}
+
 input.submit_button {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -535,10 +540,18 @@ fieldset.vol-contact > input, #vol-personal-details > input {
 	width: 200px;
 	padding: 0;
 }
+section.form_fields label {
+	font-size:.9em;
+	vertical-align:top;
+}
 
 label.vol-label {
 	width: 90px;
 	display: inline-block;
+}
+
+label req {
+	font-weight:bold;
 }
 
 fieldset.vol-avail {
@@ -598,6 +611,10 @@ input#don-date, input#vol-current-date {
 fieldset.vol-avail > input {
 	border: 0;
 	border-bottom: 1px solid #888;
+}
+
+fieldset {
+	padding:15px;
 }
 
 /**********************************

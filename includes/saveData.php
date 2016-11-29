@@ -16,6 +16,6 @@
 		fwrite($saveFile, $json_data);
 
 		// close file
-		fclose($orderFile);
+		fclose($saveFile);
 
 	}

@@ -51,7 +51,6 @@ function process() {
 		foreach ($vars as $key => $val) {
 			$tempError = "";
 			$tempError = validate($val, $key);
-			//echo "test $key : $tempError : $val; <br>";	//validating test delete later
 			if(!empty($tempError)) {
 				$hasErrors = true;
 				$varsErrors[$key] = $tempError;
@@ -65,7 +64,7 @@ function process() {
 			saveData($vars, '../data/adoptions.json');
 			
 			// return success msg
-			echo '<p class="success"> Hello ' . $vars['name'] . ', We\'re very excited to see you want to welcome ' . $vars['petName'] . ' into you\'re family! We\'ll, get back go you on ' . $vars['aptDate'] . ' at ' . $vars['aptTime'] . ' to finalize your adoption!</p>';
+			echo '<p class="success"> Hello ' . $vars['name'] . ', We\'re very excited to see you want to welcome ' . $vars['petName'] . ' into you\'re family! We\'ll, get back to you on ' . $vars['aptDate'] . ' at ' . $vars['aptTime'] . ' to finalize your adoption!</p>';
 			
 			//reset values
 			foreach ($vars as $key => $val) {
@@ -102,7 +101,7 @@ function process() {
 				if(!empty($data)) {
 					$regex = "/^[a-zA-Z\s]+$/";
 					if ( !preg_match($regex, $data) ) {
-						return "Please enter name using only letters and spaces";
+						return "Please enter your first and last name using only letters and spaces";
 					}
 				} else {
 					return "Name is required";
@@ -137,15 +136,6 @@ function process() {
 				}
 				return "";
 			}
-			case 'cityAdd' : {
-				if ( (!empty($data)) && (
-					(!preg_match("/^[a-zA-Z\s]+$/", $data)) //alphabetical string
-				)
-				){
-					return "Invalid city. Please Re-enter";
-				}
-				return "";
-			}
 			case 'stateAdd' : {
 				if ( (!empty($data)) && (
 					(!preg_match("/^[a-zA-Z]{2}$/", $data)) //2 letters
@@ -169,10 +159,8 @@ function process() {
 					if ( !preg_match("/\d+/",$data) || ( $data <0 ) )  {
 						return "Invalid quantity.  Please enter a nonnegative number.";
 					}
-				} else {
-					return "This is a required fieldd";
-				}
-
+				} 
+				
 				return "";
 			}
 			case 'pets' : {
