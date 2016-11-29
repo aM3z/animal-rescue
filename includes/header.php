@@ -7,9 +7,17 @@
 ================================================================================
  
 TEAM:		Micaela Pierce and Miguel Amezola
-POJECT: 	1
+POJECT: 	1, 2
 COURSE: 	CSCI387
 DATE: 		2016-10-18
+
+Project 2 information:
+uses the functions:
+	strtotime(),	adoptionProcess.php, volunteerProcess.php
+	mktime(),		adoptionProcess.php
+	date(),			adoptionProcess.php, volunteerProcess.php, 
+	checkdate()		donationProcess.php, volunteerProcess.php
+	date_parse()	donationProcess.php
 
 ================================================================================
 ============================================ https://www.cs.plu.edu ============

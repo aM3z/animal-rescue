@@ -41,3 +41,6 @@
 {"date":"2016-11-29","amount":{"dogs":"0.04","cats":"0.01"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"mickey","email":"disney@test.com","address":"","phone":""},"isGift":"yes"}
 {"date":"2016-11-29","amount":{"dogs":"0.04","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"mickey","email":"disney@test.com","address":"","phone":""},"isGift":"yes"}
 {"date":"2016-11-29","amount":{"dogs":"0.04","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"mickey","email":"disney@test.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.03","cats":"0.00"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"joe smith","email":"joe@gmail.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.00","cats":"0.10"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"joe smith","email":"joe@gmail.com","address":"","phone":""},"isGift":"yes"}
+{"date":"2016-11-29","amount":{"dogs":"0.18","cats":"0.19"},"paymentPeriod":"weekly","starting":"2016-11-01","contactInfo":{"name":"joe smith","email":"test@gm.com","address":"","phone":""},"isGift":"no"}
