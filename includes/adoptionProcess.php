@@ -46,22 +46,38 @@ function process() {
 			$cleanValue = cleanData($value);
 			$vars[$key] = $cleanValue;	
 			$varsErrors[$key] = "";
-			//echo "$key <br/>";
 		}
 		
 		foreach ($vars as $key => $val) {
 			$tempError = "";
 			$tempError = validate($val, $key);
-			echo "test $key : $tempError : $val; <br>";	//validating test delete later
+			//echo "test $key : $tempError : $val; <br>";	//validating test delete later
 			if(!empty($tempError)) {
 				$hasErrors = true;
 				$varsErrors[$key] = $tempError;
 			}
 		}	
-		echo "test2: $tempError; <br>";		//validating test delete later
 		if($hasErrors) {
 			return '<p class="warning">Please correct the error(s) in the form and resubmit.</p>';
-		}		
+		}
+		else {
+			//write to json
+			saveData($vars, '../data/adoptions.json');
+			
+			// return success msg
+			echo '<p class="success"> Hello ' . $vars['name'] . ', We\'re very excited to see you want to welcome ' . $vars['petName'] . ' into you\'re family! We\'ll, get back go you on ' . $vars['aptDate'] . ' at ' . $vars['aptTime'] . ' to finalize your adoption!</p>';
+			
+			//reset values
+			foreach ($vars as $key => $val) {
+				if($key != 'submitButton') {
+					$vars[$key] = "";
+				}
+			}
+			
+			return;
+			
+			
+		}
 		
    } else {
 	}
@@ -181,10 +197,8 @@ function process() {
 			}
 			
 			case 'aptTime' : {
-				//$openTime = date(mktime(1, 8, 00, 1, 1, 2000);
 				$openTime = date("H:i", mktime(8, 0));
 				$closeTime = date("H:i", mktime(20, 0));
-				echo "TIME: $openTime || $closeTime<br>";
 				if ( (!empty($data)) && (
 					(strtotime($data) < strtotime($openTime))
 					|| (strtotime($data) > strtotime($closeTime))
