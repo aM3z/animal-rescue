@@ -614,7 +614,13 @@ fieldset.vol-avail > input {
 }
 
 fieldset {
-	padding:15px;
+	padding:25px;
+}
+
+legend {
+	font:.9em times new roman;
+	font-weight:bold;
+	color:#7E7F9A;
 }
 
 /**********************************

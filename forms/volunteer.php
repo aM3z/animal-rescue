@@ -330,7 +330,7 @@
 				value="yes"
 				required
 				<?php if($volAgrees == 'yes') echo 'checked'; ?>
-			> I agree.</input>
+			> <label for="volAgrees"">"I agree.</label>
 
 			<br><br><hr>
 

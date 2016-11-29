@@ -22,7 +22,7 @@
 		</section>
 		<section class="form_fields">
 			<fieldset id="adoptee">
-				<legend>adoptee</legend>
+				<legend>Adoptee</legend>
 				
 				<!--pet name-->
 				<label for="petname" class="vol-label"><req>Name</req></label>
