@@ -33,6 +33,8 @@
 			$volAvailMonPeriodErr, $volAvailTuePeriodErr, $volAvailWedPeriodErr, 
 			$volAvailThuPeriodErr, $volAvailFriPeriodErr, $volAvailSatPeriodErr, 
 			$volAvailSunPeriodErr;
+			
+		global $hasErrors;
 
 		// check if data posted
 		// clean & validate data
@@ -227,7 +229,7 @@
 					$volAvailSunPeriodErr = "";
 
 				// return success msg
-				return '<p class="success">Thank you very much for your generous donation, ' . $lastUser . '!</p>';
+				return '<p class="success">Thank you very much for your time, ' . $lastUser . ', we\'re excited to have you on our team!</p>';
 			}
 		}
 
@@ -247,7 +249,7 @@
                 	// get associative array with detailed info about given date
                     $dateChk = date_parse($data);
                     // check the validity of the date formed by the arguments
-                    if ( !checkdate($dateChk[month], $dateChk[day], $dateChk[year]) ) {
+                    if ( !checkdate($dateChk['month'], $dateChk['day'], $dateChk['year']) ) {
                     	return "Invalid Order Date.  Please Re-enter";
 					}
 
@@ -269,12 +271,14 @@
 			}
 			// phone
 			case 'phone' : {
-
-                if ( !empty($data) && !preg_match("/^[0-9]{10}$/", $data) ) {
-	            	return "Invalid Phone Number. Please Re-enter";
-			    }
-
-			    return "";
+				if ( (!empty($data)) && (
+					(!preg_match("/^[2-9]\d{2}-\d{3}-\d{4}$/", $data)) //xxx-xxx-xxxx
+					&& (!preg_match("/^[0-9]{10}$/", $data)) //xxxxxxxxxx
+				)
+				){
+					return "Invalid Phone Number. Please Re-enter";
+				}
+				return "";
 			}
 			// $DOB
 			case 'dob' : {
@@ -300,12 +304,15 @@
 						return "Start time cannot be after end time.";
 					}
 
-					//$earliestTime = DateTime::createFromFormat('H:i a', "7:00am"); 
-					//$latestTime = DateTime::createFromFormat('H:i a', "12:00am");
+					//check if within working hours
+					$openTime = date("H:i", mktime(7, 0));
+					$closeTime = date("H:i", mktime(11, 59));
+					if ((strtotime($startTime) < strtotime($openTime))
+						|| (strtotime($endTime) < strtotime($closeTime)) )
+					{
+						return "Invalid time. We allow work  between 7am and 12am";
+					}
 
-					//if($startTime < ) {
-
-					//}
 				} else {
 					return "Missing time.";
 				}

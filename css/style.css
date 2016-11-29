@@ -541,7 +541,6 @@ fieldset.vol-contact > input, #vol-personal-details > input {
 	padding: 0;
 }
 section.form_fields label {
-	font-size:.9em;
 	vertical-align:top;
 }
 
@@ -552,6 +551,7 @@ label.vol-label {
 
 label req {
 	font-weight:bold;
+	color:#7E7F9A;
 }
 
 fieldset.vol-avail {

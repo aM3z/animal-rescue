@@ -19,8 +19,10 @@
 
 	<form id="adoption_form" method="POST" action="">
 		<section class="button_float">
-			<input type="submit" name="submitButton" value="SUBMIT!" class="submit_button">
-			<input type="reset" value="CLEAR!" class="submit_button">
+			<article>
+				<input type="submit" name="submitButton" value="SUBMIT!" class="submit_button">
+				<input type="reset" value="CLEAR!" class="submit_button">
+			</article>
 		</section>
 		<section class="form_fields">
 
@@ -41,7 +43,7 @@
 
 				<legend>Contact Information</legend>
 
-				<label class="vol-label" for="vol-name">Name</label>
+				<label class="vol-label" for="vol-name"><req>Name</req></label>
 				<input 
 					type="text" 
 					id="vol-name" 
@@ -52,9 +54,9 @@
 					required
 				>
 
-				<br>
+				<br/><br/>
 
-				<label class="vol-label" for="vol-email">Email</label>
+				<label class="vol-label" for="vol-email"><req>Email</req></label>
 				<input 
 					type="email" 
 					id="vol-email"
@@ -65,7 +67,7 @@
 				>
 				<?php if(!empty($volEmailErr)) echo '<span class="warning">' . $volEmailErr . '</span>';?>
 
-				<br>
+				<br><br>
 
 				<label class="vol-label" for="vol-address">Address</label>
 				<input 
@@ -75,28 +77,29 @@
 					value="<?= $volAddress; ?>"
 				>
 
-				<br>
+				<br><br>
 
-				<label class="vol-label" for="vol-phone">Phone</label>
+				<label class="vol-label" for="vol-phone"><req>Phone</req></label>
 				<input 
 					type="tel" 
 					id="vol-phone" 
 					name="volPhone" 
 					value="<?= $volPhone; ?>"
-					placeholder="(253) 555-1234"
+					placeholder="253-555-1234"
+					required
 				>
 
 				<?php if(!empty($volPhoneErr)) echo '<span class="warning">' . $volPhoneErr . '</span>';?>
 
 			</fieldset>
 
-			<br>
+			<br><br>
 
 			<!-- date of birth and gender -->
 			<fieldset id="vol-personal-details">
 				<legend>Personal Details</legend>
 
-				<label class="vol-label" for="vol-dob" >Date of Birth</label>
+				<label class="vol-label" for="vol-dob" ><req>Date of Birth</req></label>
 				<input 
 					type="date" 
 					id="vol-dob" 
@@ -107,7 +110,7 @@
 				
 				<?php if(!empty($volDOBErr)) echo '<span class="warning">' . $volDOBErr . '</span>';?>
 
-				<br>
+				<br><br>
 
 				<label class="vol-label" for="vol-sex" >Sex</label>
 				<select id="vol-sex" name="volSex">
@@ -124,7 +127,7 @@
 			<fieldset class="vol-contact" id="vol-emergency-contant">
 				<legend>Emergency Contact</legend>
 
-				<label class="vol-label" for="vol-emer-name">Name</label>
+				<label class="vol-label" for="vol-emer-name"><req>Name</req></label>
 				<input 
 					type="text" 
 					id="vol-emer-name" 
@@ -134,9 +137,9 @@
 					required
 				>
 
-				<br>
+				<br/><br/>
 
-				<label class="vol-label" for="vol-emer-email">Email</label>
+				<label class="vol-label" for="vol-emer-email"><req>Email</req></label>
 				<input 
 					type="email" 
 					id="vol-emer-email" 
@@ -148,7 +151,7 @@
 
 				<?php if(!empty($volEmerEmailErr)) echo '<span class="warning">' . $volEmerEmailErr . '</span>';?>
 
-				<br>
+				<br/><br/>
 
 				<label class="vol-label" for="vol-emer-address">Address</label>
 				<input 
@@ -158,7 +161,7 @@
 					value="<?= $volEmerAddress; ?>"
 				>
 
-				<br>
+				<br/><br/>
 
 				<label class="vol-label" for="vol-emer-phone">Phone</label>
 				<input 
@@ -173,7 +176,7 @@
 
 			</fieldset>
 
-			<br>
+			<br/><br/>
 
 			<!-- availability - days (Sunday through Saturday), start and end times (7am to midnight) -->
 			<fieldset id="vol-avail">
@@ -225,7 +228,7 @@
 				<legend>Important Details</legend>
 
 				<!-- max hours per month or week willing to volunteer -->
-				<label for="vol-max-hours">I would like to volunteer a maximum of </label>
+				<label for="vol-max-hours"><req>I would like to volunteer a maximum of </req></label>
 				<input 
 					type="number" 
 					id="vol-max-hours" 
@@ -256,7 +259,7 @@
 				<br><br>
 
 				<!-- skills and experience (see example for ideas) -->
-				<label for="vol-experience">Skills and Experience</label>
+				<label for="vol-experience"><req>Skills and Experience</req></label>
 				<br>
 				<textarea 
 					id="vol-experience" 
@@ -306,7 +309,7 @@
 					value="<?=$volCleanup;?>"
 				>
 				<br/><br/>
-				<label for="vol-pref">List specific preferences here</label>
+				<label for="vol-pref"><req>List specific preferences here</req></label>
 				<textarea 
 					id="vol-pref" 
 					name="volPref" 
@@ -319,7 +322,7 @@
 			<!-- Volunteer Application Agreement (see example for ideas) -->
 			<p>I understand and agree that submitting this application form does not automatically register me as a volunteer, and that there may be certain qualifications I must meet, including the acceptance of established volunteer policies and procedures before I may begin volunteering.</p>
 
-			<p>By submitting this form, I attest that the information I have provided on the form is true and accurate.</p>
+			<p><b>By submitting this form, I attest that the information I have provided on the form is true and accurate.</b></p>
 
 			<input 
 				type="checkbox"
