@@ -3,6 +3,11 @@
 	require '../includes/cleanData.php';
 	require '../includes/saveData.php';
 
+	/**
+	 *
+	 * This script processes the donation form.
+	 *
+	 */
 
 	$donDate = $donAmountDog = $donAmountCat = $donPaymentPeriod = $donStart = 
 		$donName = $donEmail = $donAddress = $donPhone = $donGift = "";

@@ -3,6 +3,14 @@
 	require '../includes/cleanData.php';
 	require '../includes/saveData.php';
 
+	/**
+	 *
+	 * This script processes the volunteer form.
+	 *
+     * NOTE: strtotime() is a built-in functions that has not been discussed in class.
+	 *
+	 */
+
 	$hasErrors = false;
 
 	$volDate = $volName = $volEmail = $volAddress = $volPhone = $volDOB = $volSex =
